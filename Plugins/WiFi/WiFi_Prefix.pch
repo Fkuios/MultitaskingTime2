@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'ÇPROJECTNAMEÈ' target in the 'ÇPROJECTNAMEÈ' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
+
+#define MTIdentifier	@"wifi"
+
+#import "MTStatusBarIcon.h"
+
+#include <objc/runtime.h>
+
+@interface MTSBIconServer : NSObject
+
++ (id)sharedInstance;
+
+- (void)reorderAllIcons;
+- (NSDictionary *)preferencesForBundleID:(NSString *)bundleID;
+
+@end

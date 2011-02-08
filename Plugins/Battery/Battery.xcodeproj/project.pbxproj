@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3354D63124A6BF300137BF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3354D62124A6BF300137BF8 /* Foundation.framework */; };
+		F3354D65124A6BF300137BF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3354D64124A6BF300137BF8 /* UIKit.framework */; };
+		F35833B3124A823B0015D047 /* FKBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = F35833B2124A823B0015D047 /* FKBattery.m */; };
+		F358341B124A84400015D047 /* FKBatteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F358341A124A84400015D047 /* FKBatteryView.m */; };
+		F362C0B61250D56F00EFCC84 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = F362C0B51250D56F00EFCC84 /* Settings.plist */; };
+		F366F5A4126E4F0900FECF34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F366F5A3126E4F0900FECF34 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D5B49B6048680CD000E48DA /* Battery.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Battery.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		F3354D62124A6BF300137BF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3354D64124A6BF300137BF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3354DFD124A6FA800137BF8 /* Battery_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battery_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		F35833B1124A823B0015D047 /* FKBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FKBattery.h; path = Classes/FKBattery.h; sourceTree = SOURCE_ROOT; };
+		F35833B2124A823B0015D047 /* FKBattery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FKBattery.m; path = Classes/FKBattery.m; sourceTree = SOURCE_ROOT; };
+		F3583419124A84400015D047 /* FKBatteryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKBatteryView.h; sourceTree = "<group>"; };
+		F358341A124A84400015D047 /* FKBatteryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKBatteryView.m; sourceTree = "<group>"; };
+		F362C0B51250D56F00EFCC84 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Settings.plist; sourceTree = "<group>"; };
+		F366F5A3126E4F0900FECF34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Xcode4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F38B8F8512E73F7D0010934D /* MTStatusBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarIcon.h; path = ../../../MultitaskingTime/MultitaskingTime/Classes/MTStatusBarIcon.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F366F5A4126E4F0900FECF34 /* CoreGraphics.framework in Frameworks */,
+				F3354D63124A6BF300137BF8 /* Foundation.framework in Frameworks */,
+				F3354D65124A6BF300137BF8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* «PROJECTNAME» */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = "«PROJECTNAME»";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F366F5A3126E4F0900FECF34 /* CoreGraphics.framework */,
+				F3354D62124A6BF300137BF8 /* Foundation.framework */,
+				F3354D64124A6BF300137BF8 /* UIKit.framework */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				F362C0B51250D56F00EFCC84 /* Settings.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F35833B1124A823B0015D047 /* FKBattery.h */,
+				F35833B2124A823B0015D047 /* FKBattery.m */,
+				F3583419124A84400015D047 /* FKBatteryView.h */,
+				F358341A124A84400015D047 /* FKBatteryView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* Battery.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F38B8F8512E73F7D0010934D /* MTStatusBarIcon.h */,
+				F3354DFD124A6FA800137BF8 /* Battery_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* Battery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Battery" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				F3A56AAD12550720008A7CBD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Battery;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = "«PROJECTNAME»";
+			productReference = 8D5B49B6048680CD000E48DA /* Battery.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Battery" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* «PROJECTNAME» */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* Battery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F362C0B61250D56F00EFCC84 /* Settings.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3A56AAD12550720008A7CBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ \"${COPY}\" == \"YES\" ]; then\n    mkdir -p \"/Users/alistair/Documents/Development/iPhone/MobileSubstrate/MultitaskingTime/Built/Library/MultitaskingTime/Icons\"\n    rm -r \"/Users/alistair/Documents/Development/iPhone/MobileSubstrate/MultitaskingTime/Built/Library/MultitaskingTime/Icons/${WRAPPER_NAME}\"\n    cp -r \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"/Users/alistair/Documents/Development/iPhone/MobileSubstrate/MultitaskingTime/Built/Library/MultitaskingTime/Icons/${WRAPPER_NAME}\"\n\n    ldid -S \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n    ssh root@localhost -p 2222 \"mkdir -p /Library/MultitaskingTime/Icons/\"\n    ssh root@localhost -p 2222 \"rm -rf \\\"/Library/MultitaskingTime/Icons/${WRAPPER_NAME}/\\\"\"\n    scp -P 2222 -r \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"root@localhost:/Library/MultitaskingTime/Icons/\"\nelse\n\tif [ -d \"/Library/MultitaskingTime/Icons/${WRAPPER_NAME}\" ]; then\n\t\trm -r \"/Library/MultitaskingTime/Icons/${WRAPPER_NAME}\"\n\tfi\n    cp -r \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"/Library/MultitaskingTime/Icons/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35833B3124A823B0015D047 /* FKBattery.m in Sources */,
+				F358341B124A84400015D047 /* FKBatteryView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Battery_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = Battery;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Battery_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = Battery;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LINKER_DISPLAYS_MANGLED_NAMES = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LINKER_DISPLAYS_MANGLED_NAMES = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Battery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Battery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

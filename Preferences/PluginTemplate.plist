@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.fkuios.multitaskingtime.%identifier%</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>%defaultposition%</string>
+			<key>defaults</key>
+			<string>com.fkuios.multitaskingtime.%identifier%</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>position</string>
+			<key>label</key>
+			<string>Position</string>
+			<key>validTitles</key>
+			<array>
+				<string>Left</string>
+				<string>Center</string>
+				<string>Right</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>left</string>
+				<string>center</string>
+				<string>right</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

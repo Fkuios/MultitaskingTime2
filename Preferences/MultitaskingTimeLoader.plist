@@ -1,0 +1,7 @@
+entry = {
+  bundle = MultitaskingTime;
+  cell = PSLinkCell;
+  icon = Icon.png;
+  isController = 1;
+  label = "Multitasking Time";
+};

@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F302456C12ED07D900D4F5CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F302456B12ED07D900D4F5CF /* QuartzCore.framework */; };
+		F313E28212E4BDA3009EEDBA /* MultitaskingTime.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = F313E28012E4BDA0009EEDBA /* MultitaskingTime.plist */; };
+		F3D37FC712EB632500820050 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D37FC612EB632500820050 /* CoreFoundation.framework */; };
+		F3D3FD4512E4B7F500A7BD33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		F3D3FD4612E4B7F500A7BD33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		F3D3FD4912E4B80900A7BD33 /* MultitaskingTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D3FD3E12E4B7D800A7BD33 /* MultitaskingTime.m */; };
+		F3FA914612E5E96500ED5B19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FA914512E5E96500ED5B19 /* CoreGraphics.framework */; };
+		F3FA928B12E60CAD00ED5B19 /* MTIconLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FA928712E60CAD00ED5B19 /* MTIconLayoutView.m */; };
+		F3FA928C12E60CAD00ED5B19 /* MTSBIconServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FA928912E60CAD00ED5B19 /* MTSBIconServer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F313E28112E4BDA0009EEDBA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				F313E28212E4BDA3009EEDBA /* MultitaskingTime.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		32CA4F630368D1EE00C91783 /* MultitaskingTime_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultitaskingTime_Prefix.pch; sourceTree = "<group>"; };
+		F302456B12ED07D900D4F5CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F302ADF412E50C0A00CB5374 /* ABPredicateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPredicateDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/ABPredicateDelegate.h; sourceTree = "<absolute>"; };
+		F302ADF512E50C0A00CB5374 /* APSConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APSConnectionDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/APSConnectionDelegate.h; sourceTree = "<absolute>"; };
+		F302ADF612E50C0A00CB5374 /* CNFSoundPlayerDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNFSoundPlayerDelegateProtocol.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/CNFSoundPlayerDelegateProtocol.h; sourceTree = "<absolute>"; };
+		F302ADF712E50C0A00CB5374 /* MMSBevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSBevelView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/MMSBevelView.h; sourceTree = "<absolute>"; };
+		F302ADF812E50C0A00CB5374 /* NSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSArray.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSArray.h; sourceTree = "<absolute>"; };
+		F302ADF912E50C0A00CB5374 /* NSCharacterSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSCharacterSet.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSCharacterSet.h; sourceTree = "<absolute>"; };
+		F302ADFA12E50C0A00CB5374 /* NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSCoding.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSCoding.h; sourceTree = "<absolute>"; };
+		F302ADFB12E50C0A00CB5374 /* NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionary.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSDictionary.h; sourceTree = "<absolute>"; };
+		F302ADFC12E50C0A00CB5374 /* NSIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSIndexPath.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSIndexPath.h; sourceTree = "<absolute>"; };
+		F302ADFD12E50C0A00CB5374 /* NSMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSMutableArray.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSMutableArray.h; sourceTree = "<absolute>"; };
+		F302ADFE12E50C0A00CB5374 /* NSMutableSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSMutableSet.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSMutableSet.h; sourceTree = "<absolute>"; };
+		F302ADFF12E50C0A00CB5374 /* NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObject.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSObject.h; sourceTree = "<absolute>"; };
+		F302AE0012E50C0A00CB5374 /* NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSString.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/NSString.h; sourceTree = "<absolute>"; };
+		F302AE0112E50C0A00CB5374 /* RadiosPreferencesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadiosPreferencesDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/RadiosPreferencesDelegate.h; sourceTree = "<absolute>"; };
+		F302AE0212E50C0A00CB5374 /* RoundedBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundedBorderView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/RoundedBorderView.h; sourceTree = "<absolute>"; };
+		F302AE0312E50C0A00CB5374 /* SBAccelerometerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAccelerometerClient.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAccelerometerClient.h; sourceTree = "<absolute>"; };
+		F302AE0412E50C0A00CB5374 /* SBAccelerometerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAccelerometerInterface.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAccelerometerInterface.h; sourceTree = "<absolute>"; };
+		F302AE0512E50C0A00CB5374 /* SBActivationInfoAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBActivationInfoAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBActivationInfoAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE0612E50C0A00CB5374 /* SBActivationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBActivationView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBActivationView.h; sourceTree = "<absolute>"; };
+		F302AE0712E50C0A00CB5374 /* SBAggregateDCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAggregateDCommunicator.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAggregateDCommunicator.h; sourceTree = "<absolute>"; };
+		F302AE0812E50C0A00CB5374 /* SBAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAlert.h; sourceTree = "<absolute>"; };
+		F302AE0912E50C0A00CB5374 /* SBAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AE0A12E50C0A00CB5374 /* SBAlertImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAlertImageView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAlertImageView.h; sourceTree = "<absolute>"; };
+		F302AE0B12E50C0A00CB5374 /* SBAlertInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAlertInputView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAlertInputView.h; sourceTree = "<absolute>"; };
+		F302AE0C12E50C0A00CB5374 /* SBAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE0D12E50C0A00CB5374 /* SBAlertItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAlertItemsController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAlertItemsController.h; sourceTree = "<absolute>"; };
+		F302AE0E12E50C0A00CB5374 /* SBAlertTearDownContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAlertTearDownContext.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAlertTearDownContext.h; sourceTree = "<absolute>"; };
+		F302AE0F12E50C0A00CB5374 /* SBAlertWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAlertWindow.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAlertWindow.h; sourceTree = "<absolute>"; };
+		F302AE1012E50C0A00CB5374 /* SBAppContextHostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppContextHostView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppContextHostView.h; sourceTree = "<absolute>"; };
+		F302AE1112E50C0A00CB5374 /* SBAppDosadoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppDosadoView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppDosadoView.h; sourceTree = "<absolute>"; };
+		F302AE1212E50C0A00CB5374 /* SBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBApplication.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBApplication.h; sourceTree = "<absolute>"; };
+		F302AE1312E50C0A00CB5374 /* SBApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBApplicationController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBApplicationController.h; sourceTree = "<absolute>"; };
+		F302AE1412E50C0A00CB5374 /* SBApplicationDataLookupOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBApplicationDataLookupOperation.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBApplicationDataLookupOperation.h; sourceTree = "<absolute>"; };
+		F302AE1512E50C0A00CB5374 /* SBApplicationIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBApplicationIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBApplicationIcon.h; sourceTree = "<absolute>"; };
+		F302AE1612E50C0A00CB5374 /* SBApplicationPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBApplicationPersistence.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBApplicationPersistence.h; sourceTree = "<absolute>"; };
+		F302AE1712E50C0A00CB5374 /* SBApplicationUninstallationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBApplicationUninstallationOperation.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBApplicationUninstallationOperation.h; sourceTree = "<absolute>"; };
+		F302AE1812E50C0A00CB5374 /* SBAppProfileExpiredAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppProfileExpiredAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppProfileExpiredAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE1912E50C0A00CB5374 /* SBAppProfileNotTrustedAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppProfileNotTrustedAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppProfileNotTrustedAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE1A12E50C0A00CB5374 /* SBAppRatingsAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppRatingsAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppRatingsAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE1B12E50C0A00CB5374 /* SBAppRatingsAlertSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppRatingsAlertSheet.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppRatingsAlertSheet.h; sourceTree = "<absolute>"; };
+		F302AE1C12E50C0A00CB5374 /* SBAppRatingsStarControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppRatingsStarControl.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppRatingsStarControl.h; sourceTree = "<absolute>"; };
+		F302AE1D12E50C0A00CB5374 /* SBAppShuffleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppShuffleView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppShuffleView.h; sourceTree = "<absolute>"; };
+		F302AE1E12E50C0A00CB5374 /* SBAppSwitcherBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppSwitcherBarView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppSwitcherBarView.h; sourceTree = "<absolute>"; };
+		F302AE1F12E50C0A00CB5374 /* SBAppSwitcherBarViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppSwitcherBarViewDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppSwitcherBarViewDelegate.h; sourceTree = "<absolute>"; };
+		F302AE2012E50C0A00CB5374 /* SBAppSwitcherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppSwitcherController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppSwitcherController.h; sourceTree = "<absolute>"; };
+		F302AE2112E50C0A00CB5374 /* SBAppSwitcherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppSwitcherModel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppSwitcherModel.h; sourceTree = "<absolute>"; };
+		F302AE2212E50C0A00CB5374 /* SBAppSwitcherScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppSwitcherScrollView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppSwitcherScrollView.h; sourceTree = "<absolute>"; };
+		F302AE2312E50C0A00CB5374 /* SBAppSwitcherScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppSwitcherScrollViewDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppSwitcherScrollViewDelegate.h; sourceTree = "<absolute>"; };
+		F302AE2412E50C0A00CB5374 /* SBAppToAppTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppToAppTransitionController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppToAppTransitionController.h; sourceTree = "<absolute>"; };
+		F302AE2512E50C0A00CB5374 /* SBAppToAppTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppToAppTransitionView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppToAppTransitionView.h; sourceTree = "<absolute>"; };
+		F302AE2612E50C0A00CB5374 /* SBAppWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAppWindow.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAppWindow.h; sourceTree = "<absolute>"; };
+		F302AE2712E50C0A00CB5374 /* SBAwayChargingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayChargingView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayChargingView.h; sourceTree = "<absolute>"; };
+		F302AE2812E50C0A00CB5374 /* SBAwayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayController.h; sourceTree = "<absolute>"; };
+		F302AE2912E50C0A00CB5374 /* SBAwayDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayDateView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayDateView.h; sourceTree = "<absolute>"; };
+		F302AE2A12E50C0A00CB5374 /* SBAwayInCallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayInCallController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayInCallController.h; sourceTree = "<absolute>"; };
+		F302AE2B12E50C0A00CB5374 /* SBAwayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayItem.h; sourceTree = "<absolute>"; };
+		F302AE2C12E50C0A00CB5374 /* SBAwayItemContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayItemContentView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayItemContentView.h; sourceTree = "<absolute>"; };
+		F302AE2D12E50C0A00CB5374 /* SBAwayItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayItemsView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayItemsView.h; sourceTree = "<absolute>"; };
+		F302AE2E12E50C0A00CB5374 /* SBAwayLockBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayLockBar.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayLockBar.h; sourceTree = "<absolute>"; };
+		F302AE2F12E50C0A00CB5374 /* SBAwayMediaControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayMediaControlsView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayMediaControlsView.h; sourceTree = "<absolute>"; };
+		F302AE3012E50C0A00CB5374 /* SBAwayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayModel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayModel.h; sourceTree = "<absolute>"; };
+		F302AE3112E50C0A00CB5374 /* SBAwaySwipeGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwaySwipeGestureRecognizer.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwaySwipeGestureRecognizer.h; sourceTree = "<absolute>"; };
+		F302AE3212E50C0A00CB5374 /* SBAwayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAwayView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBAwayView.h; sourceTree = "<absolute>"; };
+		F302AE3312E50C0A00CB5374 /* SBBackgroundContinuationPermissionAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBackgroundContinuationPermissionAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBackgroundContinuationPermissionAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE3412E50C0A00CB5374 /* SBBadgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBadgeLabel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBadgeLabel.h; sourceTree = "<absolute>"; };
+		F302AE3512E50C0A00CB5374 /* SBBatteryChargingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBatteryChargingView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBatteryChargingView.h; sourceTree = "<absolute>"; };
+		F302AE3612E50C0A00CB5374 /* SBBatteryReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBatteryReflectionView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBatteryReflectionView.h; sourceTree = "<absolute>"; };
+		F302AE3712E50C0A00CB5374 /* SBBluetoothController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBluetoothController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBluetoothController.h; sourceTree = "<absolute>"; };
+		F302AE3812E50C0A00CB5374 /* SBBookmarkIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBookmarkIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBookmarkIcon.h; sourceTree = "<absolute>"; };
+		F302AE3912E50C0A00CB5374 /* SBBrightnessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBrightnessController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBrightnessController.h; sourceTree = "<absolute>"; };
+		F302AE3A12E50C0A00CB5374 /* SBBrightnessHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBrightnessHUDView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBrightnessHUDView.h; sourceTree = "<absolute>"; };
+		F302AE3B12E50C0A00CB5374 /* SBBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBrightnessSlider.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBBrightnessSlider.h; sourceTree = "<absolute>"; };
+		F302AE3C12E50C0A00CB5374 /* SBCalendarAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCalendarAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCalendarAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE3D12E50C0A00CB5374 /* SBCalendarApplicationIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCalendarApplicationIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCalendarApplicationIcon.h; sourceTree = "<absolute>"; };
+		F302AE3E12E50C0A00CB5374 /* SBCalendarAwayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCalendarAwayItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCalendarAwayItem.h; sourceTree = "<absolute>"; };
+		F302AE3F12E50C0A00CB5374 /* SBCalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCalendarController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCalendarController.h; sourceTree = "<absolute>"; };
+		F302AE4012E50C0A00CB5374 /* SBCalendarIconContentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCalendarIconContentsView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCalendarIconContentsView.h; sourceTree = "<absolute>"; };
+		F302AE4112E50C0A00CB5374 /* SBCallAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCallAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCallAlert.h; sourceTree = "<absolute>"; };
+		F302AE4212E50C0A00CB5374 /* SBCallAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCallAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCallAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AE4312E50C0A00CB5374 /* SBCallFailureAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCallFailureAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCallFailureAlert.h; sourceTree = "<absolute>"; };
+		F302AE4412E50C0A00CB5374 /* SBCallFailureAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCallFailureAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCallFailureAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AE4512E50C0A00CB5374 /* SBCallFailureAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCallFailureAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCallFailureAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE4612E50C0A00CB5374 /* SBCallPermissionAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCallPermissionAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCallPermissionAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE4712E50C0A00CB5374 /* SBCallWaitingAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCallWaitingAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCallWaitingAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AE4812E50C0A00CB5374 /* SBCarrierDebuggingAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCarrierDebuggingAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCarrierDebuggingAlert.h; sourceTree = "<absolute>"; };
+		F302AE4912E50C0A00CB5374 /* SBCFBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCFBundle.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCFBundle.h; sourceTree = "<absolute>"; };
+		F302AE4A12E50C0A00CB5374 /* SBCompassRecalibrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCompassRecalibrationController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCompassRecalibrationController.h; sourceTree = "<absolute>"; };
+		F302AE4B12E50C0A00CB5374 /* SBCompassRecalibrationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCompassRecalibrationView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCompassRecalibrationView.h; sourceTree = "<absolute>"; };
+		F302AE4C12E50C0A00CB5374 /* SBConferenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBConferenceManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBConferenceManager.h; sourceTree = "<absolute>"; };
+		F302AE4D12E50C0A00CB5374 /* SBContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBContext.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBContext.h; sourceTree = "<absolute>"; };
+		F302AE4E12E50C0A00CB5374 /* SBCornerViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCornerViewFactory.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBCornerViewFactory.h; sourceTree = "<absolute>"; };
+		F302AE4F12E50C0A00CB5374 /* SBDataPlanAccountAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDataPlanAccountAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDataPlanAccountAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE5012E50C0A00CB5374 /* SBDataPlanActivationAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDataPlanActivationAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDataPlanActivationAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE5112E50C0A00CB5374 /* SBDataPlanAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDataPlanAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDataPlanAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE5212E50C0A00CB5374 /* SBDataPlanCompletionAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDataPlanCompletionAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDataPlanCompletionAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE5312E50C0A00CB5374 /* SBDataPlanExpirationAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDataPlanExpirationAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDataPlanExpirationAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE5412E50C0A00CB5374 /* SBDataPlanFailureAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDataPlanFailureAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDataPlanFailureAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE5512E50C0A00CB5374 /* SBDataPlanUsageAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDataPlanUsageAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDataPlanUsageAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE5612E50C0A00CB5374 /* SBDeleteIconAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeleteIconAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeleteIconAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE5712E50C0A00CB5374 /* SBDestinationHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDestinationHole.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDestinationHole.h; sourceTree = "<absolute>"; };
+		F302AE5812E50C0A00CB5374 /* SBDeviceLockEntryField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockEntryField.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockEntryField.h; sourceTree = "<absolute>"; };
+		F302AE5912E50C0A00CB5374 /* SBDeviceLockKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockKeyboard.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockKeyboard.h; sourceTree = "<absolute>"; };
+		F302AE5A12E50C0A00CB5374 /* SBDeviceLockKeypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockKeypad.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockKeypad.h; sourceTree = "<absolute>"; };
+		F302AE5B12E50C0A00CB5374 /* SBDeviceLockKeypadPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockKeypadPhone.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockKeypadPhone.h; sourceTree = "<absolute>"; };
+		F302AE5C12E50C0A00CB5374 /* SBDeviceLockKeypadWildcat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockKeypadWildcat.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockKeypadWildcat.h; sourceTree = "<absolute>"; };
+		F302AE5D12E50C0A00CB5374 /* SBDeviceLockPasscodeEntryAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockPasscodeEntryAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockPasscodeEntryAlert.h; sourceTree = "<absolute>"; };
+		F302AE5E12E50C0A00CB5374 /* SBDeviceLockPasscodeEntryAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockPasscodeEntryAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockPasscodeEntryAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AE5F12E50C0A00CB5374 /* SBDeviceLockTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockTitle.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockTitle.h; sourceTree = "<absolute>"; };
+		F302AE6012E50C0A00CB5374 /* SBDeviceLockTitlePhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockTitlePhone.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockTitlePhone.h; sourceTree = "<absolute>"; };
+		F302AE6112E50C0A00CB5374 /* SBDeviceLockTitleWildcatKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockTitleWildcatKeyboard.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockTitleWildcatKeyboard.h; sourceTree = "<absolute>"; };
+		F302AE6212E50C0A00CB5374 /* SBDeviceLockTitleWildcatKeypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockTitleWildcatKeypad.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockTitleWildcatKeypad.h; sourceTree = "<absolute>"; };
+		F302AE6312E50C0A00CB5374 /* SBDeviceLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockView.h; sourceTree = "<absolute>"; };
+		F302AE6412E50C0A00CB5374 /* SBDeviceLockViewWithKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockViewWithKeyboard.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockViewWithKeyboard.h; sourceTree = "<absolute>"; };
+		F302AE6512E50C0A00CB5374 /* SBDeviceLockViewWithKeyboardPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockViewWithKeyboardPhone.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockViewWithKeyboardPhone.h; sourceTree = "<absolute>"; };
+		F302AE6612E50C0A00CB5374 /* SBDeviceLockViewWithKeyboardWildcat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockViewWithKeyboardWildcat.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockViewWithKeyboardWildcat.h; sourceTree = "<absolute>"; };
+		F302AE6712E50C0A00CB5374 /* SBDeviceLockViewWithKeypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockViewWithKeypad.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockViewWithKeypad.h; sourceTree = "<absolute>"; };
+		F302AE6812E50C0A00CB5374 /* SBDeviceLockViewWithKeypadPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockViewWithKeypadPhone.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockViewWithKeypadPhone.h; sourceTree = "<absolute>"; };
+		F302AE6912E50C0A00CB5374 /* SBDeviceLockViewWithKeypadWildcat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDeviceLockViewWithKeypadWildcat.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDeviceLockViewWithKeypadWildcat.h; sourceTree = "<absolute>"; };
+		F302AE6A12E50C0A00CB5374 /* SBDimmingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDimmingWindow.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDimmingWindow.h; sourceTree = "<absolute>"; };
+		F302AE6B12E50C0A00CB5374 /* SBDiskSpaceAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDiskSpaceAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDiskSpaceAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE6C12E50C0A00CB5374 /* SBDismissOnlyAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDismissOnlyAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDismissOnlyAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE6D12E50C0A00CB5374 /* SBDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDisplay.h; sourceTree = "<absolute>"; };
+		F302AE6E12E50C0A00CB5374 /* SBDisplayStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDisplayStack.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDisplayStack.h; sourceTree = "<absolute>"; };
+		F302AE6F12E50C0A00CB5374 /* SBDockIconListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDockIconListModel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDockIconListModel.h; sourceTree = "<absolute>"; };
+		F302AE7012E50C0A00CB5374 /* SBDockIconListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDockIconListView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDockIconListView.h; sourceTree = "<absolute>"; };
+		F302AE7112E50C0A00CB5374 /* SBDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDownloadController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDownloadController.h; sourceTree = "<absolute>"; };
+		F302AE7212E50C0A00CB5374 /* SBDownloadingIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDownloadingIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDownloadingIcon.h; sourceTree = "<absolute>"; };
+		F302AE7312E50C0A00CB5374 /* SBDownloadingProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDownloadingProgressBar.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBDownloadingProgressBar.h; sourceTree = "<absolute>"; };
+		F302AE7412E50C0A00CB5374 /* SBEdgeActivationAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBEdgeActivationAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBEdgeActivationAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE7512E50C0A00CB5374 /* SBEmergencyCallButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBEmergencyCallButton.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBEmergencyCallButton.h; sourceTree = "<absolute>"; };
+		F302AE7612E50C0A00CB5374 /* SBEmergencyCallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBEmergencyCallView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBEmergencyCallView.h; sourceTree = "<absolute>"; };
+		F302AE7712E50C0A00CB5374 /* SBFlippyAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFlippyAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFlippyAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE7812E50C0A00CB5374 /* SBFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolder.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolder.h; sourceTree = "<absolute>"; };
+		F302AE7912E50C0A00CB5374 /* SBFolderIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderIcon.h; sourceTree = "<absolute>"; };
+		F302AE7A12E50C0A00CB5374 /* SBFolderIconListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderIconListModel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderIconListModel.h; sourceTree = "<absolute>"; };
+		F302AE7B12E50C0A00CB5374 /* SBFolderIconListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderIconListView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderIconListView.h; sourceTree = "<absolute>"; };
+		F302AE7C12E50C0A00CB5374 /* SBFolderNotchHighlightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderNotchHighlightView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderNotchHighlightView.h; sourceTree = "<absolute>"; };
+		F302AE7D12E50C0A00CB5374 /* SBFolderRotationAnimationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderRotationAnimationContext.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderRotationAnimationContext.h; sourceTree = "<absolute>"; };
+		F302AE7E12E50C0A00CB5374 /* SBFolderSlidingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderSlidingView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderSlidingView.h; sourceTree = "<absolute>"; };
+		F302AE7F12E50C0A00CB5374 /* SBFolderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderTextField.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderTextField.h; sourceTree = "<absolute>"; };
+		F302AE8012E50C0A00CB5374 /* SBFolderTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderTitleLabel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderTitleLabel.h; sourceTree = "<absolute>"; };
+		F302AE8112E50C0A00CB5374 /* SBFolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBFolderView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBFolderView.h; sourceTree = "<absolute>"; };
+		F302AE8212E50C0A00CB5374 /* SBGameDeletionAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBGameDeletionAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBGameDeletionAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE8312E50C0A00CB5374 /* SBHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBHUDController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBHUDController.h; sourceTree = "<absolute>"; };
+		F302AE8412E50C0A00CB5374 /* SBHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBHUDView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBHUDView.h; sourceTree = "<absolute>"; };
+		F302AE8512E50C0A00CB5374 /* SBHUDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBHUDWindow.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBHUDWindow.h; sourceTree = "<absolute>"; };
+		F302AE8612E50C0A00CB5374 /* SBiBooksUpdateAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBiBooksUpdateAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBiBooksUpdateAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE8712E50C0A00CB5374 /* SBIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIcon.h; sourceTree = "<absolute>"; };
+		F302AE8812E50C0A00CB5374 /* SBIconBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconBadge.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconBadge.h; sourceTree = "<absolute>"; };
+		F302AE8912E50C0A00CB5374 /* SBIconContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconContentView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconContentView.h; sourceTree = "<absolute>"; };
+		F302AE8A12E50C0A00CB5374 /* SBIconController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconController.h; sourceTree = "<absolute>"; };
+		F302AE8B12E50C0A00CB5374 /* SBIconDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconDelegate.h; sourceTree = "<absolute>"; };
+		F302AE8C12E50C0A00CB5374 /* SBIconImageBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconImageBadge.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconImageBadge.h; sourceTree = "<absolute>"; };
+		F302AE8D12E50C0A00CB5374 /* SBIconImageContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconImageContainerView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconImageContainerView.h; sourceTree = "<absolute>"; };
+		F302AE8E12E50C0A00CB5374 /* SBIconImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconImageView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconImageView.h; sourceTree = "<absolute>"; };
+		F302AE8F12E50C0A00CB5374 /* SBIconIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconIndexPath.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconIndexPath.h; sourceTree = "<absolute>"; };
+		F302AE9012E50C0A00CB5374 /* SBIconLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconLabel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconLabel.h; sourceTree = "<absolute>"; };
+		F302AE9112E50C0A00CB5374 /* SBIconListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconListModel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconListModel.h; sourceTree = "<absolute>"; };
+		F302AE9212E50C0A00CB5374 /* SBIconListPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconListPageControl.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconListPageControl.h; sourceTree = "<absolute>"; };
+		F302AE9312E50C0A00CB5374 /* SBIconListPageControlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconListPageControlDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconListPageControlDelegate.h; sourceTree = "<absolute>"; };
+		F302AE9412E50C0A00CB5374 /* SBIconListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconListView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconListView.h; sourceTree = "<absolute>"; };
+		F302AE9512E50C0A00CB5374 /* SBIconModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconModel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconModel.h; sourceTree = "<absolute>"; };
+		F302AE9612E50C0A00CB5374 /* SBIconRotationContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconRotationContainer.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconRotationContainer.h; sourceTree = "<absolute>"; };
+		F302AE9712E50C0A00CB5374 /* SBIconScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconScrollView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconScrollView.h; sourceTree = "<absolute>"; };
+		F302AE9812E50C0A00CB5374 /* SBIconsIntoFolderAnimationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBIconsIntoFolderAnimationContext.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBIconsIntoFolderAnimationContext.h; sourceTree = "<absolute>"; };
+		F302AE9912E50C0A00CB5374 /* SBInvitationAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBInvitationAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBInvitationAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE9A12E50C0A00CB5374 /* SBKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBKeyboard.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBKeyboard.h; sourceTree = "<absolute>"; };
+		F302AE9B12E50C0A00CB5374 /* SBLaunchAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLaunchAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBLaunchAlertItem.h; sourceTree = "<absolute>"; };
+		F302AE9C12E50C0A00CB5374 /* SBLaunchdUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLaunchdUtilities.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBLaunchdUtilities.h; sourceTree = "<absolute>"; };
+		F302AE9D12E50C0A00CB5374 /* SBLeafIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLeafIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBLeafIcon.h; sourceTree = "<absolute>"; };
+		F302AE9E12E50C0A00CB5374 /* SBLinenNotchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLinenNotchView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBLinenNotchView.h; sourceTree = "<absolute>"; };
+		F302AE9F12E50C0A00CB5374 /* SBLinenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLinenView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBLinenView.h; sourceTree = "<absolute>"; };
+		F302AEA012E50C0A00CB5374 /* SBLockdownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLockdownManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBLockdownManager.h; sourceTree = "<absolute>"; };
+		F302AEA112E50C0A00CB5374 /* SBLockScreenAudioRoutesAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLockScreenAudioRoutesAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBLockScreenAudioRoutesAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEA212E50C0A00CB5374 /* SBLowPowerAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLowPowerAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBLowPowerAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEA312E50C0A00CB5374 /* SBMediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBMediaController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBMediaController.h; sourceTree = "<absolute>"; };
+		F302AEA412E50C0A00CB5374 /* SBMiniAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBMiniAlertController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBMiniAlertController.h; sourceTree = "<absolute>"; };
+		F302AEA512E50C0A00CB5374 /* SBMMSDelayedDownloadAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBMMSDelayedDownloadAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBMMSDelayedDownloadAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEA612E50C0A00CB5374 /* SBMMSInformationMissingAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBMMSInformationMissingAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBMMSInformationMissingAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEA712E50C0A00CB5374 /* SBMobilityManagementAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBMobilityManagementAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBMobilityManagementAlert.h; sourceTree = "<absolute>"; };
+		F302AEA812E50C0A00CB5374 /* SBMovePlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBMovePlan.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBMovePlan.h; sourceTree = "<absolute>"; };
+		F302AEA912E50C0A00CB5374 /* SBNetworkReselectionAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNetworkReselectionAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNetworkReselectionAlert.h; sourceTree = "<absolute>"; };
+		F302AEAA12E50C0A00CB5374 /* SBNetworkReselectionAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNetworkReselectionAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNetworkReselectionAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEAB12E50C0A00CB5374 /* SBNoResultsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNoResultsView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNoResultsView.h; sourceTree = "<absolute>"; };
+		F302AEAC12E50C0A00CB5374 /* SBNowPlayingAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNowPlayingAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNowPlayingAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEAD12E50C0A00CB5374 /* SBNowPlayingAlertItemPushButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNowPlayingAlertItemPushButton.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNowPlayingAlertItemPushButton.h; sourceTree = "<absolute>"; };
+		F302AEAE12E50C0A00CB5374 /* SBNowPlayingAlertSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNowPlayingAlertSheet.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNowPlayingAlertSheet.h; sourceTree = "<absolute>"; };
+		F302AEAF12E50C0A00CB5374 /* SBNowPlayingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNowPlayingBar.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNowPlayingBar.h; sourceTree = "<absolute>"; };
+		F302AEB012E50C0A00CB5374 /* SBNowPlayingBarMediaControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNowPlayingBarMediaControlsView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNowPlayingBarMediaControlsView.h; sourceTree = "<absolute>"; };
+		F302AEB112E50C0A00CB5374 /* SBNowPlayingBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNowPlayingBarView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNowPlayingBarView.h; sourceTree = "<absolute>"; };
+		F302AEB212E50C0A00CB5374 /* SBNullIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNullIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBNullIcon.h; sourceTree = "<absolute>"; };
+		F302AEB312E50C0A00CB5374 /* SBOrientationLockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBOrientationLockManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBOrientationLockManager.h; sourceTree = "<absolute>"; };
+		F302AEB412E50C0A00CB5374 /* SBPasscodeAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPasscodeAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPasscodeAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEB512E50C0A00CB5374 /* SBPasscodeComplianceAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPasscodeComplianceAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPasscodeComplianceAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEB612E50C0A00CB5374 /* SBPasscodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPasscodeController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPasscodeController.h; sourceTree = "<absolute>"; };
+		F302AEB712E50C0A00CB5374 /* SBPasscodeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPasscodeField.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPasscodeField.h; sourceTree = "<absolute>"; };
+		F302AEB812E50C0A00CB5374 /* SBPasscodeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPasscodeTextField.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPasscodeTextField.h; sourceTree = "<absolute>"; };
+		F302AEB912E50C0A00CB5374 /* SBPathWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPathWaveView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPathWaveView.h; sourceTree = "<absolute>"; };
+		F302AEBA12E50C0A00CB5374 /* SBPhoneAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPhoneAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPhoneAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEBB12E50C0A00CB5374 /* SBPlatformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPlatformController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPlatformController.h; sourceTree = "<absolute>"; };
+		F302AEBC12E50C0A00CB5374 /* SBPowerDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPowerDownController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPowerDownController.h; sourceTree = "<absolute>"; };
+		F302AEBD12E50C0A00CB5374 /* SBPowerDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPowerDownView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPowerDownView.h; sourceTree = "<absolute>"; };
+		F302AEBE12E50C0A00CB5374 /* SBPrintStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPrintStatusController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPrintStatusController.h; sourceTree = "<absolute>"; };
+		F302AEBF12E50C0A00CB5374 /* SBPrintStatusIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPrintStatusIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBPrintStatusIcon.h; sourceTree = "<absolute>"; };
+		F302AEC012E50C0A00CB5374 /* SBProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBProcess.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBProcess.h; sourceTree = "<absolute>"; };
+		F302AEC112E50C0A00CB5374 /* SBProcessAssertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBProcessAssertion.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBProcessAssertion.h; sourceTree = "<absolute>"; };
+		F302AEC212E50C0A00CB5374 /* SBProcessAssertionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBProcessAssertionManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBProcessAssertionManager.h; sourceTree = "<absolute>"; };
+		F302AEC312E50C0A00CB5374 /* SBProxyRemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBProxyRemoteView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBProxyRemoteView.h; sourceTree = "<absolute>"; };
+		F302AEC412E50C0A00CB5374 /* SBRemoteLocalNotificationAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteLocalNotificationAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteLocalNotificationAlert.h; sourceTree = "<absolute>"; };
+		F302AEC512E50C0A00CB5374 /* SBRemoteLocalNotificationAlertDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteLocalNotificationAlertDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteLocalNotificationAlertDelegate.h; sourceTree = "<absolute>"; };
+		F302AEC612E50C0A00CB5374 /* SBRemoteLocalNotificationAlertSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteLocalNotificationAlertSheet.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteLocalNotificationAlertSheet.h; sourceTree = "<absolute>"; };
+		F302AEC712E50C0A00CB5374 /* SBRemoteNotificationClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteNotificationClient.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteNotificationClient.h; sourceTree = "<absolute>"; };
+		F302AEC812E50C0A00CB5374 /* SBRemoteNotificationEnableSystemwideAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteNotificationEnableSystemwideAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteNotificationEnableSystemwideAlert.h; sourceTree = "<absolute>"; };
+		F302AEC912E50C0A00CB5374 /* SBRemoteNotificationNeedIdentityAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteNotificationNeedIdentityAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteNotificationNeedIdentityAlert.h; sourceTree = "<absolute>"; };
+		F302AECA12E50C0A00CB5374 /* SBRemoteNotificationPermissionAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteNotificationPermissionAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteNotificationPermissionAlert.h; sourceTree = "<absolute>"; };
+		F302AECB12E50C0A00CB5374 /* SBRemoteNotificationServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteNotificationServer.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteNotificationServer.h; sourceTree = "<absolute>"; };
+		F302AECC12E50C0A00CB5374 /* SBRemoteViewInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteViewInfo.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteViewInfo.h; sourceTree = "<absolute>"; };
+		F302AECD12E50C0A00CB5374 /* SBRemoteViewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemoteViewsController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemoteViewsController.h; sourceTree = "<absolute>"; };
+		F302AECE12E50C0A00CB5374 /* SBRemovedFolderHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRemovedFolderHole.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRemovedFolderHole.h; sourceTree = "<absolute>"; };
+		F302AECF12E50C0A00CB5374 /* SBReorderInfoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBReorderInfoAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBReorderInfoAlert.h; sourceTree = "<absolute>"; };
+		F302AED012E50C0A00CB5374 /* SBResetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBResetManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBResetManager.h; sourceTree = "<absolute>"; };
+		F302AED112E50C0A00CB5374 /* SBResetProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBResetProgressView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBResetProgressView.h; sourceTree = "<absolute>"; };
+		F302AED212E50C0A00CB5374 /* SBResetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBResetView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBResetView.h; sourceTree = "<absolute>"; };
+		F302AED312E50C0A00CB5374 /* SBRestoreFailureAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRestoreFailureAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRestoreFailureAlertItem.h; sourceTree = "<absolute>"; };
+		F302AED412E50C0A00CB5374 /* SBRingerHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRingerHUDController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRingerHUDController.h; sourceTree = "<absolute>"; };
+		F302AED512E50C0A00CB5374 /* SBRingerHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRingerHUDView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRingerHUDView.h; sourceTree = "<absolute>"; };
+		F302AED612E50C0A00CB5374 /* SBRootFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRootFolder.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRootFolder.h; sourceTree = "<absolute>"; };
+		F302AED712E50C0A00CB5374 /* SBRoundedCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRoundedCornersView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRoundedCornersView.h; sourceTree = "<absolute>"; };
+		F302AED812E50C0A00CB5374 /* SBRoundedMaskCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRoundedMaskCornerView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBRoundedMaskCornerView.h; sourceTree = "<absolute>"; };
+		F302AED912E50C0A00CB5374 /* SBScreenFlash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBScreenFlash.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBScreenFlash.h; sourceTree = "<absolute>"; };
+		F302AEDA12E50C0A00CB5374 /* SBScreenShotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBScreenShotter.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBScreenShotter.h; sourceTree = "<absolute>"; };
+		F302AEDB12E50C0A00CB5374 /* SBSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSearchController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSearchController.h; sourceTree = "<absolute>"; };
+		F302AEDC12E50C0A00CB5374 /* SBSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSearchModel.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSearchModel.h; sourceTree = "<absolute>"; };
+		F302AEDD12E50C0A00CB5374 /* SBSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSearchTableViewCell.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSearchTableViewCell.h; sourceTree = "<absolute>"; };
+		F302AEDE12E50C0A00CB5374 /* SBSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSearchView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSearchView.h; sourceTree = "<absolute>"; };
+		F302AEDF12E50C0A00CB5374 /* SBSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSheetController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSheetController.h; sourceTree = "<absolute>"; };
+		F302AEE012E50C0A00CB5374 /* SBSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSheetView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSheetView.h; sourceTree = "<absolute>"; };
+		F302AEE112E50C0A00CB5374 /* SBSIMLockAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMLockAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMLockAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEE212E50C0A00CB5374 /* SBSIMLockEntryAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMLockEntryAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMLockEntryAlert.h; sourceTree = "<absolute>"; };
+		F302AEE312E50C0A00CB5374 /* SBSIMLockEntryAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMLockEntryAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMLockEntryAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AEE412E50C0A00CB5374 /* SBSIMLockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMLockManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMLockManager.h; sourceTree = "<absolute>"; };
+		F302AEE512E50C0A00CB5374 /* SBSIMLockPUKEntryAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMLockPUKEntryAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMLockPUKEntryAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AEE612E50C0A00CB5374 /* SBSIMToolkitAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMToolkitAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMToolkitAlert.h; sourceTree = "<absolute>"; };
+		F302AEE712E50C0A00CB5374 /* SBSIMToolkitGetInputDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMToolkitGetInputDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMToolkitGetInputDisplay.h; sourceTree = "<absolute>"; };
+		F302AEE812E50C0A00CB5374 /* SBSIMToolkitGetYesNoInputDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMToolkitGetYesNoInputDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMToolkitGetYesNoInputDisplay.h; sourceTree = "<absolute>"; };
+		F302AEE912E50C0A00CB5374 /* SBSIMToolkitListDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMToolkitListDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMToolkitListDisplay.h; sourceTree = "<absolute>"; };
+		F302AEEA12E50C0A00CB5374 /* SBSIMToolkitOneShotGetInputDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMToolkitOneShotGetInputDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMToolkitOneShotGetInputDisplay.h; sourceTree = "<absolute>"; };
+		F302AEEB12E50C0A00CB5374 /* SBSIMToolkitSentAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMToolkitSentAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMToolkitSentAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AEEC12E50C0A00CB5374 /* SBSIMToolkitSetUpCallDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMToolkitSetUpCallDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMToolkitSetUpCallDisplay.h; sourceTree = "<absolute>"; };
+		F302AEED12E50C0A00CB5374 /* SBSIMToolkitTextAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSIMToolkitTextAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSIMToolkitTextAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AEEE12E50C0A00CB5374 /* SBSlidingAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSlidingAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSlidingAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AEEF12E50C0A00CB5374 /* SBSlidingViewHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSlidingViewHighlight.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSlidingViewHighlight.h; sourceTree = "<absolute>"; };
+		F302AEF012E50C0A00CB5374 /* SBSMSAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSMSAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSMSAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEF112E50C0A00CB5374 /* SBSMSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSMSApplication.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSMSApplication.h; sourceTree = "<absolute>"; };
+		F302AEF212E50C0A00CB5374 /* SBSMSClass0Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSMSClass0Alert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSMSClass0Alert.h; sourceTree = "<absolute>"; };
+		F302AEF312E50C0A00CB5374 /* SBSMSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSMSManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSMSManager.h; sourceTree = "<absolute>"; };
+		F302AEF412E50C0A00CB5374 /* SBSoundPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSoundPreferences.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSoundPreferences.h; sourceTree = "<absolute>"; };
+		F302AEF512E50C0A00CB5374 /* SBStatusBarDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBStatusBarDataManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBStatusBarDataManager.h; sourceTree = "<absolute>"; };
+		F302AEF612E50C0A00CB5374 /* SBSyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSyncController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBSyncController.h; sourceTree = "<absolute>"; };
+		F302AEF712E50C0A00CB5374 /* SBTelephonyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTelephonyManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBTelephonyManager.h; sourceTree = "<absolute>"; };
+		F302AEF812E50C0A00CB5374 /* SBTetherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTetherController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBTetherController.h; sourceTree = "<absolute>"; };
+		F302AEF912E50C0A00CB5374 /* SBTextDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTextDisplayView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBTextDisplayView.h; sourceTree = "<absolute>"; };
+		F302AEFA12E50C0A00CB5374 /* SBTTYPromptAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTTYPromptAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBTTYPromptAlert.h; sourceTree = "<absolute>"; };
+		F302AEFB12E50C0A00CB5374 /* SBTTYPromptAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTTYPromptAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBTTYPromptAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AEFC12E50C0A00CB5374 /* SBTVOutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTVOutController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBTVOutController.h; sourceTree = "<absolute>"; };
+		F302AEFD12E50C0A00CB5374 /* SBUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUIController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBUIController.h; sourceTree = "<absolute>"; };
+		F302AEFE12E50C0A00CB5374 /* SBUnsupportedURLAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUnsupportedURLAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBUnsupportedURLAlertItem.h; sourceTree = "<absolute>"; };
+		F302AEFF12E50C0A00CB5374 /* SBUserInstalledApplicationIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUserInstalledApplicationIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBUserInstalledApplicationIcon.h; sourceTree = "<absolute>"; };
+		F302AF0012E50C0A00CB5374 /* SBUserNotificationAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUserNotificationAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBUserNotificationAlert.h; sourceTree = "<absolute>"; };
+		F302AF0112E50C0A00CB5374 /* SBUserNotificationAlertSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUserNotificationAlertSheet.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBUserNotificationAlertSheet.h; sourceTree = "<absolute>"; };
+		F302AF0212E50C0A00CB5374 /* SBUserNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUserNotificationCenter.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBUserNotificationCenter.h; sourceTree = "<absolute>"; };
+		F302AF0312E50C0A00CB5374 /* SBUSSDAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUSSDAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBUSSDAlert.h; sourceTree = "<absolute>"; };
+		F302AF0412E50C0A00CB5374 /* SBUSSDAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUSSDAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBUSSDAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AF0512E50C0A00CB5374 /* SBVideoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBVideoAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBVideoAlert.h; sourceTree = "<absolute>"; };
+		F302AF0612E50C0A00CB5374 /* SBVideoAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBVideoAlertDisplay.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBVideoAlertDisplay.h; sourceTree = "<absolute>"; };
+		F302AF0712E50C0A00CB5374 /* SBVideoPermissionAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBVideoPermissionAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBVideoPermissionAlertItem.h; sourceTree = "<absolute>"; };
+		F302AF0812E50C0A00CB5374 /* SBVODController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBVODController.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBVODController.h; sourceTree = "<absolute>"; };
+		F302AF0912E50C0A00CB5374 /* SBVoiceControlAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBVoiceControlAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBVoiceControlAlert.h; sourceTree = "<absolute>"; };
+		F302AF0A12E50C0A00CB5374 /* SBVoiceMailAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBVoiceMailAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBVoiceMailAlertItem.h; sourceTree = "<absolute>"; };
+		F302AF0B12E50C0A00CB5374 /* SBVoicemailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBVoicemailManager.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBVoicemailManager.h; sourceTree = "<absolute>"; };
+		F302AF0C12E50C0A00CB5374 /* SBVolumeHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBVolumeHUDView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBVolumeHUDView.h; sourceTree = "<absolute>"; };
+		F302AF0D12E50C0A00CB5374 /* SBWallpaperClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWallpaperClipView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWallpaperClipView.h; sourceTree = "<absolute>"; };
+		F302AF0E12E50C0A00CB5374 /* SBWallpaperNotchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWallpaperNotchView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWallpaperNotchView.h; sourceTree = "<absolute>"; };
+		F302AF0F12E50C0A00CB5374 /* SBWallpaperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWallpaperView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWallpaperView.h; sourceTree = "<absolute>"; };
+		F302AF1012E50C0A00CB5374 /* SBWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWaveView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWaveView.h; sourceTree = "<absolute>"; };
+		F302AF1112E50C0A00CB5374 /* SBWeatherApplicationIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWeatherApplicationIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWeatherApplicationIcon.h; sourceTree = "<absolute>"; };
+		F302AF1212E50C0A00CB5374 /* SBWidgetApplicationIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWidgetApplicationIcon.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWidgetApplicationIcon.h; sourceTree = "<absolute>"; };
+		F302AF1312E50C0A00CB5374 /* SBWiFiDontAskAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWiFiDontAskAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWiFiDontAskAlertItem.h; sourceTree = "<absolute>"; };
+		F302AF1412E50C0A00CB5374 /* SBWiFiErrorAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWiFiErrorAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWiFiErrorAlertItem.h; sourceTree = "<absolute>"; };
+		F302AF1512E50C0A00CB5374 /* SBWiFiIsEnterpriseAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWiFiIsEnterpriseAlert.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWiFiIsEnterpriseAlert.h; sourceTree = "<absolute>"; };
+		F302AF1612E50C0A00CB5374 /* SBWiFiManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWiFiManagerDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWiFiManagerDelegate.h; sourceTree = "<absolute>"; };
+		F302AF1712E50C0A00CB5374 /* SBWiFiPasswordAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWiFiPasswordAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWiFiPasswordAlertItem.h; sourceTree = "<absolute>"; };
+		F302AF1812E50C0A00CB5374 /* SBWiFiTrustAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWiFiTrustAlertItem.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBWiFiTrustAlertItem.h; sourceTree = "<absolute>"; };
+		F302AF1912E50C0A00CB5374 /* SBZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBZoomView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SBZoomView.h; sourceTree = "<absolute>"; };
+		F302AF1A12E50C0A00CB5374 /* SMSAlertSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSAlertSheet.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SMSAlertSheet.h; sourceTree = "<absolute>"; };
+		F302AF1B12E50C0A00CB5374 /* SPDaemonQueryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDaemonQueryDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SPDaemonQueryDelegate.h; sourceTree = "<absolute>"; };
+		F302AF1C12E50C0A00CB5374 /* SpringBoard-Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SpringBoard-Class.h"; path = "/Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SpringBoard-Class.h"; sourceTree = "<absolute>"; };
+		F302AF1D12E50C0A00CB5374 /* SpringBoard-Structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SpringBoard-Structs.h"; path = "/Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SpringBoard-Structs.h"; sourceTree = "<absolute>"; };
+		F302AF1E12E50C0A00CB5374 /* SpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringBoard.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SpringBoard.h; sourceTree = "<absolute>"; };
+		F302AF1F12E50C0A00CB5374 /* SSDownloadQueueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSDownloadQueueObserver.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/SSDownloadQueueObserver.h; sourceTree = "<absolute>"; };
+		F302AF2012E50C0A00CB5374 /* UIAlertTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIAlertTableCell.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIAlertTableCell.h; sourceTree = "<absolute>"; };
+		F302AF2112E50C0A00CB5374 /* UIAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIAlertViewDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIAlertViewDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2212E50C0A00CB5374 /* UIApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIApplicationDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIApplicationDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2312E50C0A00CB5374 /* UIKeyInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIKeyInput.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIKeyInput.h; sourceTree = "<absolute>"; };
+		F302AF2412E50C0A00CB5374 /* UINavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINavigationControllerDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UINavigationControllerDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2512E50C0A00CB5374 /* UIPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIPageControl.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIPageControl.h; sourceTree = "<absolute>"; };
+		F302AF2612E50C0A00CB5374 /* UIPrintStatusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIPrintStatusDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIPrintStatusDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2712E50C0A00CB5374 /* UIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIScrollView.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIScrollView.h; sourceTree = "<absolute>"; };
+		F302AF2812E50C0A00CB5374 /* UIScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIScrollViewDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIScrollViewDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2912E50C0A00CB5374 /* UISearchBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISearchBarDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UISearchBarDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2A12E50C0A00CB5374 /* UIStatusBarStyleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIStatusBarStyleDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIStatusBarStyleDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2B12E50C0A00CB5374 /* UITableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITableViewDataSource.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UITableViewDataSource.h; sourceTree = "<absolute>"; };
+		F302AF2C12E50C0A00CB5374 /* UITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITableViewDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UITableViewDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2D12E50C0A00CB5374 /* UITextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITextFieldDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UITextFieldDelegate.h; sourceTree = "<absolute>"; };
+		F302AF2E12E50C0A00CB5374 /* UITextInputTraits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITextInputTraits.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UITextInputTraits.h; sourceTree = "<absolute>"; };
+		F302AF2F12E50C0A00CB5374 /* UIWindowDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWindowDelegate.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/UIWindowDelegate.h; sourceTree = "<absolute>"; };
+		F302AF3012E50C0A00CB5374 /* VolumeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VolumeControl.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/VolumeControl.h; sourceTree = "<absolute>"; };
+		F302AF3112E50C0A00CB5374 /* WhiteBorderedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhiteBorderedTextField.h; path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard/WhiteBorderedTextField.h; sourceTree = "<absolute>"; };
+		F313E28012E4BDA0009EEDBA /* MultitaskingTime.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MultitaskingTime.plist; sourceTree = "<group>"; };
+		F3D37FC612EB632500820050 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F3D3FD3E12E4B7D800A7BD33 /* MultitaskingTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultitaskingTime.m; sourceTree = SOURCE_ROOT; };
+		F3FA914512E5E96500ED5B19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3FA928612E60CAD00ED5B19 /* MTIconLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTIconLayoutView.h; sourceTree = "<group>"; };
+		F3FA928712E60CAD00ED5B19 /* MTIconLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTIconLayoutView.m; sourceTree = "<group>"; };
+		F3FA928812E60CAD00ED5B19 /* MTSBIconServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSBIconServer.h; sourceTree = "<group>"; };
+		F3FA928912E60CAD00ED5B19 /* MTSBIconServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSBIconServer.m; sourceTree = "<group>"; };
+		F3FA928A12E60CAD00ED5B19 /* MTStatusBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarIcon.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3D3FD4112E4B7E400A7BD33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D3FD4512E4B7F500A7BD33 /* Foundation.framework in Frameworks */,
+				F3D3FD4612E4B7F500A7BD33 /* UIKit.framework in Frameworks */,
+				F3FA914612E5E96500ED5B19 /* CoreGraphics.framework in Frameworks */,
+				F3D37FC712EB632500820050 /* CoreFoundation.framework in Frameworks */,
+				F302456C12ED07D900D4F5CF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F3FA928612E60CAD00ED5B19 /* MTIconLayoutView.h */,
+				F3FA928712E60CAD00ED5B19 /* MTIconLayoutView.m */,
+				F3FA928812E60CAD00ED5B19 /* MTSBIconServer.h */,
+				F3FA928912E60CAD00ED5B19 /* MTSBIconServer.m */,
+				F3FA928A12E60CAD00ED5B19 /* MTStatusBarIcon.h */,
+				F3D3FD3E12E4B7D800A7BD33 /* MultitaskingTime.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F302ADF312E50C0A00CB5374 /* SpringBoard */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MultitaskingTime_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F313E28012E4BDA0009EEDBA /* MultitaskingTime.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				F3FA914512E5E96500ED5B19 /* CoreGraphics.framework */,
+				F3D37FC612EB632500820050 /* CoreFoundation.framework */,
+				F302456B12ED07D900D4F5CF /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F302ADF312E50C0A00CB5374 /* SpringBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F302ADF412E50C0A00CB5374 /* ABPredicateDelegate.h */,
+				F302ADF512E50C0A00CB5374 /* APSConnectionDelegate.h */,
+				F302ADF612E50C0A00CB5374 /* CNFSoundPlayerDelegateProtocol.h */,
+				F302ADF712E50C0A00CB5374 /* MMSBevelView.h */,
+				F302ADF812E50C0A00CB5374 /* NSArray.h */,
+				F302ADF912E50C0A00CB5374 /* NSCharacterSet.h */,
+				F302ADFA12E50C0A00CB5374 /* NSCoding.h */,
+				F302ADFB12E50C0A00CB5374 /* NSDictionary.h */,
+				F302ADFC12E50C0A00CB5374 /* NSIndexPath.h */,
+				F302ADFD12E50C0A00CB5374 /* NSMutableArray.h */,
+				F302ADFE12E50C0A00CB5374 /* NSMutableSet.h */,
+				F302ADFF12E50C0A00CB5374 /* NSObject.h */,
+				F302AE0012E50C0A00CB5374 /* NSString.h */,
+				F302AE0112E50C0A00CB5374 /* RadiosPreferencesDelegate.h */,
+				F302AE0212E50C0A00CB5374 /* RoundedBorderView.h */,
+				F302AE0312E50C0A00CB5374 /* SBAccelerometerClient.h */,
+				F302AE0412E50C0A00CB5374 /* SBAccelerometerInterface.h */,
+				F302AE0512E50C0A00CB5374 /* SBActivationInfoAlertItem.h */,
+				F302AE0612E50C0A00CB5374 /* SBActivationView.h */,
+				F302AE0712E50C0A00CB5374 /* SBAggregateDCommunicator.h */,
+				F302AE0812E50C0A00CB5374 /* SBAlert.h */,
+				F302AE0912E50C0A00CB5374 /* SBAlertDisplay.h */,
+				F302AE0A12E50C0A00CB5374 /* SBAlertImageView.h */,
+				F302AE0B12E50C0A00CB5374 /* SBAlertInputView.h */,
+				F302AE0C12E50C0A00CB5374 /* SBAlertItem.h */,
+				F302AE0D12E50C0A00CB5374 /* SBAlertItemsController.h */,
+				F302AE0E12E50C0A00CB5374 /* SBAlertTearDownContext.h */,
+				F302AE0F12E50C0A00CB5374 /* SBAlertWindow.h */,
+				F302AE1012E50C0A00CB5374 /* SBAppContextHostView.h */,
+				F302AE1112E50C0A00CB5374 /* SBAppDosadoView.h */,
+				F302AE1212E50C0A00CB5374 /* SBApplication.h */,
+				F302AE1312E50C0A00CB5374 /* SBApplicationController.h */,
+				F302AE1412E50C0A00CB5374 /* SBApplicationDataLookupOperation.h */,
+				F302AE1512E50C0A00CB5374 /* SBApplicationIcon.h */,
+				F302AE1612E50C0A00CB5374 /* SBApplicationPersistence.h */,
+				F302AE1712E50C0A00CB5374 /* SBApplicationUninstallationOperation.h */,
+				F302AE1812E50C0A00CB5374 /* SBAppProfileExpiredAlertItem.h */,
+				F302AE1912E50C0A00CB5374 /* SBAppProfileNotTrustedAlertItem.h */,
+				F302AE1A12E50C0A00CB5374 /* SBAppRatingsAlertItem.h */,
+				F302AE1B12E50C0A00CB5374 /* SBAppRatingsAlertSheet.h */,
+				F302AE1C12E50C0A00CB5374 /* SBAppRatingsStarControl.h */,
+				F302AE1D12E50C0A00CB5374 /* SBAppShuffleView.h */,
+				F302AE1E12E50C0A00CB5374 /* SBAppSwitcherBarView.h */,
+				F302AE1F12E50C0A00CB5374 /* SBAppSwitcherBarViewDelegate.h */,
+				F302AE2012E50C0A00CB5374 /* SBAppSwitcherController.h */,
+				F302AE2112E50C0A00CB5374 /* SBAppSwitcherModel.h */,
+				F302AE2212E50C0A00CB5374 /* SBAppSwitcherScrollView.h */,
+				F302AE2312E50C0A00CB5374 /* SBAppSwitcherScrollViewDelegate.h */,
+				F302AE2412E50C0A00CB5374 /* SBAppToAppTransitionController.h */,
+				F302AE2512E50C0A00CB5374 /* SBAppToAppTransitionView.h */,
+				F302AE2612E50C0A00CB5374 /* SBAppWindow.h */,
+				F302AE2712E50C0A00CB5374 /* SBAwayChargingView.h */,
+				F302AE2812E50C0A00CB5374 /* SBAwayController.h */,
+				F302AE2912E50C0A00CB5374 /* SBAwayDateView.h */,
+				F302AE2A12E50C0A00CB5374 /* SBAwayInCallController.h */,
+				F302AE2B12E50C0A00CB5374 /* SBAwayItem.h */,
+				F302AE2C12E50C0A00CB5374 /* SBAwayItemContentView.h */,
+				F302AE2D12E50C0A00CB5374 /* SBAwayItemsView.h */,
+				F302AE2E12E50C0A00CB5374 /* SBAwayLockBar.h */,
+				F302AE2F12E50C0A00CB5374 /* SBAwayMediaControlsView.h */,
+				F302AE3012E50C0A00CB5374 /* SBAwayModel.h */,
+				F302AE3112E50C0A00CB5374 /* SBAwaySwipeGestureRecognizer.h */,
+				F302AE3212E50C0A00CB5374 /* SBAwayView.h */,
+				F302AE3312E50C0A00CB5374 /* SBBackgroundContinuationPermissionAlertItem.h */,
+				F302AE3412E50C0A00CB5374 /* SBBadgeLabel.h */,
+				F302AE3512E50C0A00CB5374 /* SBBatteryChargingView.h */,
+				F302AE3612E50C0A00CB5374 /* SBBatteryReflectionView.h */,
+				F302AE3712E50C0A00CB5374 /* SBBluetoothController.h */,
+				F302AE3812E50C0A00CB5374 /* SBBookmarkIcon.h */,
+				F302AE3912E50C0A00CB5374 /* SBBrightnessController.h */,
+				F302AE3A12E50C0A00CB5374 /* SBBrightnessHUDView.h */,
+				F302AE3B12E50C0A00CB5374 /* SBBrightnessSlider.h */,
+				F302AE3C12E50C0A00CB5374 /* SBCalendarAlertItem.h */,
+				F302AE3D12E50C0A00CB5374 /* SBCalendarApplicationIcon.h */,
+				F302AE3E12E50C0A00CB5374 /* SBCalendarAwayItem.h */,
+				F302AE3F12E50C0A00CB5374 /* SBCalendarController.h */,
+				F302AE4012E50C0A00CB5374 /* SBCalendarIconContentsView.h */,
+				F302AE4112E50C0A00CB5374 /* SBCallAlert.h */,
+				F302AE4212E50C0A00CB5374 /* SBCallAlertDisplay.h */,
+				F302AE4312E50C0A00CB5374 /* SBCallFailureAlert.h */,
+				F302AE4412E50C0A00CB5374 /* SBCallFailureAlertDisplay.h */,
+				F302AE4512E50C0A00CB5374 /* SBCallFailureAlertItem.h */,
+				F302AE4612E50C0A00CB5374 /* SBCallPermissionAlertItem.h */,
+				F302AE4712E50C0A00CB5374 /* SBCallWaitingAlertDisplay.h */,
+				F302AE4812E50C0A00CB5374 /* SBCarrierDebuggingAlert.h */,
+				F302AE4912E50C0A00CB5374 /* SBCFBundle.h */,
+				F302AE4A12E50C0A00CB5374 /* SBCompassRecalibrationController.h */,
+				F302AE4B12E50C0A00CB5374 /* SBCompassRecalibrationView.h */,
+				F302AE4C12E50C0A00CB5374 /* SBConferenceManager.h */,
+				F302AE4D12E50C0A00CB5374 /* SBContext.h */,
+				F302AE4E12E50C0A00CB5374 /* SBCornerViewFactory.h */,
+				F302AE4F12E50C0A00CB5374 /* SBDataPlanAccountAlertItem.h */,
+				F302AE5012E50C0A00CB5374 /* SBDataPlanActivationAlertItem.h */,
+				F302AE5112E50C0A00CB5374 /* SBDataPlanAlertItem.h */,
+				F302AE5212E50C0A00CB5374 /* SBDataPlanCompletionAlertItem.h */,
+				F302AE5312E50C0A00CB5374 /* SBDataPlanExpirationAlertItem.h */,
+				F302AE5412E50C0A00CB5374 /* SBDataPlanFailureAlertItem.h */,
+				F302AE5512E50C0A00CB5374 /* SBDataPlanUsageAlertItem.h */,
+				F302AE5612E50C0A00CB5374 /* SBDeleteIconAlertItem.h */,
+				F302AE5712E50C0A00CB5374 /* SBDestinationHole.h */,
+				F302AE5812E50C0A00CB5374 /* SBDeviceLockEntryField.h */,
+				F302AE5912E50C0A00CB5374 /* SBDeviceLockKeyboard.h */,
+				F302AE5A12E50C0A00CB5374 /* SBDeviceLockKeypad.h */,
+				F302AE5B12E50C0A00CB5374 /* SBDeviceLockKeypadPhone.h */,
+				F302AE5C12E50C0A00CB5374 /* SBDeviceLockKeypadWildcat.h */,
+				F302AE5D12E50C0A00CB5374 /* SBDeviceLockPasscodeEntryAlert.h */,
+				F302AE5E12E50C0A00CB5374 /* SBDeviceLockPasscodeEntryAlertDisplay.h */,
+				F302AE5F12E50C0A00CB5374 /* SBDeviceLockTitle.h */,
+				F302AE6012E50C0A00CB5374 /* SBDeviceLockTitlePhone.h */,
+				F302AE6112E50C0A00CB5374 /* SBDeviceLockTitleWildcatKeyboard.h */,
+				F302AE6212E50C0A00CB5374 /* SBDeviceLockTitleWildcatKeypad.h */,
+				F302AE6312E50C0A00CB5374 /* SBDeviceLockView.h */,
+				F302AE6412E50C0A00CB5374 /* SBDeviceLockViewWithKeyboard.h */,
+				F302AE6512E50C0A00CB5374 /* SBDeviceLockViewWithKeyboardPhone.h */,
+				F302AE6612E50C0A00CB5374 /* SBDeviceLockViewWithKeyboardWildcat.h */,
+				F302AE6712E50C0A00CB5374 /* SBDeviceLockViewWithKeypad.h */,
+				F302AE6812E50C0A00CB5374 /* SBDeviceLockViewWithKeypadPhone.h */,
+				F302AE6912E50C0A00CB5374 /* SBDeviceLockViewWithKeypadWildcat.h */,
+				F302AE6A12E50C0A00CB5374 /* SBDimmingWindow.h */,
+				F302AE6B12E50C0A00CB5374 /* SBDiskSpaceAlertItem.h */,
+				F302AE6C12E50C0A00CB5374 /* SBDismissOnlyAlertItem.h */,
+				F302AE6D12E50C0A00CB5374 /* SBDisplay.h */,
+				F302AE6E12E50C0A00CB5374 /* SBDisplayStack.h */,
+				F302AE6F12E50C0A00CB5374 /* SBDockIconListModel.h */,
+				F302AE7012E50C0A00CB5374 /* SBDockIconListView.h */,
+				F302AE7112E50C0A00CB5374 /* SBDownloadController.h */,
+				F302AE7212E50C0A00CB5374 /* SBDownloadingIcon.h */,
+				F302AE7312E50C0A00CB5374 /* SBDownloadingProgressBar.h */,
+				F302AE7412E50C0A00CB5374 /* SBEdgeActivationAlertItem.h */,
+				F302AE7512E50C0A00CB5374 /* SBEmergencyCallButton.h */,
+				F302AE7612E50C0A00CB5374 /* SBEmergencyCallView.h */,
+				F302AE7712E50C0A00CB5374 /* SBFlippyAlertItem.h */,
+				F302AE7812E50C0A00CB5374 /* SBFolder.h */,
+				F302AE7912E50C0A00CB5374 /* SBFolderIcon.h */,
+				F302AE7A12E50C0A00CB5374 /* SBFolderIconListModel.h */,
+				F302AE7B12E50C0A00CB5374 /* SBFolderIconListView.h */,
+				F302AE7C12E50C0A00CB5374 /* SBFolderNotchHighlightView.h */,
+				F302AE7D12E50C0A00CB5374 /* SBFolderRotationAnimationContext.h */,
+				F302AE7E12E50C0A00CB5374 /* SBFolderSlidingView.h */,
+				F302AE7F12E50C0A00CB5374 /* SBFolderTextField.h */,
+				F302AE8012E50C0A00CB5374 /* SBFolderTitleLabel.h */,
+				F302AE8112E50C0A00CB5374 /* SBFolderView.h */,
+				F302AE8212E50C0A00CB5374 /* SBGameDeletionAlertItem.h */,
+				F302AE8312E50C0A00CB5374 /* SBHUDController.h */,
+				F302AE8412E50C0A00CB5374 /* SBHUDView.h */,
+				F302AE8512E50C0A00CB5374 /* SBHUDWindow.h */,
+				F302AE8612E50C0A00CB5374 /* SBiBooksUpdateAlertItem.h */,
+				F302AE8712E50C0A00CB5374 /* SBIcon.h */,
+				F302AE8812E50C0A00CB5374 /* SBIconBadge.h */,
+				F302AE8912E50C0A00CB5374 /* SBIconContentView.h */,
+				F302AE8A12E50C0A00CB5374 /* SBIconController.h */,
+				F302AE8B12E50C0A00CB5374 /* SBIconDelegate.h */,
+				F302AE8C12E50C0A00CB5374 /* SBIconImageBadge.h */,
+				F302AE8D12E50C0A00CB5374 /* SBIconImageContainerView.h */,
+				F302AE8E12E50C0A00CB5374 /* SBIconImageView.h */,
+				F302AE8F12E50C0A00CB5374 /* SBIconIndexPath.h */,
+				F302AE9012E50C0A00CB5374 /* SBIconLabel.h */,
+				F302AE9112E50C0A00CB5374 /* SBIconListModel.h */,
+				F302AE9212E50C0A00CB5374 /* SBIconListPageControl.h */,
+				F302AE9312E50C0A00CB5374 /* SBIconListPageControlDelegate.h */,
+				F302AE9412E50C0A00CB5374 /* SBIconListView.h */,
+				F302AE9512E50C0A00CB5374 /* SBIconModel.h */,
+				F302AE9612E50C0A00CB5374 /* SBIconRotationContainer.h */,
+				F302AE9712E50C0A00CB5374 /* SBIconScrollView.h */,
+				F302AE9812E50C0A00CB5374 /* SBIconsIntoFolderAnimationContext.h */,
+				F302AE9912E50C0A00CB5374 /* SBInvitationAlertItem.h */,
+				F302AE9A12E50C0A00CB5374 /* SBKeyboard.h */,
+				F302AE9B12E50C0A00CB5374 /* SBLaunchAlertItem.h */,
+				F302AE9C12E50C0A00CB5374 /* SBLaunchdUtilities.h */,
+				F302AE9D12E50C0A00CB5374 /* SBLeafIcon.h */,
+				F302AE9E12E50C0A00CB5374 /* SBLinenNotchView.h */,
+				F302AE9F12E50C0A00CB5374 /* SBLinenView.h */,
+				F302AEA012E50C0A00CB5374 /* SBLockdownManager.h */,
+				F302AEA112E50C0A00CB5374 /* SBLockScreenAudioRoutesAlertItem.h */,
+				F302AEA212E50C0A00CB5374 /* SBLowPowerAlertItem.h */,
+				F302AEA312E50C0A00CB5374 /* SBMediaController.h */,
+				F302AEA412E50C0A00CB5374 /* SBMiniAlertController.h */,
+				F302AEA512E50C0A00CB5374 /* SBMMSDelayedDownloadAlertItem.h */,
+				F302AEA612E50C0A00CB5374 /* SBMMSInformationMissingAlertItem.h */,
+				F302AEA712E50C0A00CB5374 /* SBMobilityManagementAlert.h */,
+				F302AEA812E50C0A00CB5374 /* SBMovePlan.h */,
+				F302AEA912E50C0A00CB5374 /* SBNetworkReselectionAlert.h */,
+				F302AEAA12E50C0A00CB5374 /* SBNetworkReselectionAlertItem.h */,
+				F302AEAB12E50C0A00CB5374 /* SBNoResultsView.h */,
+				F302AEAC12E50C0A00CB5374 /* SBNowPlayingAlertItem.h */,
+				F302AEAD12E50C0A00CB5374 /* SBNowPlayingAlertItemPushButton.h */,
+				F302AEAE12E50C0A00CB5374 /* SBNowPlayingAlertSheet.h */,
+				F302AEAF12E50C0A00CB5374 /* SBNowPlayingBar.h */,
+				F302AEB012E50C0A00CB5374 /* SBNowPlayingBarMediaControlsView.h */,
+				F302AEB112E50C0A00CB5374 /* SBNowPlayingBarView.h */,
+				F302AEB212E50C0A00CB5374 /* SBNullIcon.h */,
+				F302AEB312E50C0A00CB5374 /* SBOrientationLockManager.h */,
+				F302AEB412E50C0A00CB5374 /* SBPasscodeAlertItem.h */,
+				F302AEB512E50C0A00CB5374 /* SBPasscodeComplianceAlertItem.h */,
+				F302AEB612E50C0A00CB5374 /* SBPasscodeController.h */,
+				F302AEB712E50C0A00CB5374 /* SBPasscodeField.h */,
+				F302AEB812E50C0A00CB5374 /* SBPasscodeTextField.h */,
+				F302AEB912E50C0A00CB5374 /* SBPathWaveView.h */,
+				F302AEBA12E50C0A00CB5374 /* SBPhoneAlertItem.h */,
+				F302AEBB12E50C0A00CB5374 /* SBPlatformController.h */,
+				F302AEBC12E50C0A00CB5374 /* SBPowerDownController.h */,
+				F302AEBD12E50C0A00CB5374 /* SBPowerDownView.h */,
+				F302AEBE12E50C0A00CB5374 /* SBPrintStatusController.h */,
+				F302AEBF12E50C0A00CB5374 /* SBPrintStatusIcon.h */,
+				F302AEC012E50C0A00CB5374 /* SBProcess.h */,
+				F302AEC112E50C0A00CB5374 /* SBProcessAssertion.h */,
+				F302AEC212E50C0A00CB5374 /* SBProcessAssertionManager.h */,
+				F302AEC312E50C0A00CB5374 /* SBProxyRemoteView.h */,
+				F302AEC412E50C0A00CB5374 /* SBRemoteLocalNotificationAlert.h */,
+				F302AEC512E50C0A00CB5374 /* SBRemoteLocalNotificationAlertDelegate.h */,
+				F302AEC612E50C0A00CB5374 /* SBRemoteLocalNotificationAlertSheet.h */,
+				F302AEC712E50C0A00CB5374 /* SBRemoteNotificationClient.h */,
+				F302AEC812E50C0A00CB5374 /* SBRemoteNotificationEnableSystemwideAlert.h */,
+				F302AEC912E50C0A00CB5374 /* SBRemoteNotificationNeedIdentityAlert.h */,
+				F302AECA12E50C0A00CB5374 /* SBRemoteNotificationPermissionAlert.h */,
+				F302AECB12E50C0A00CB5374 /* SBRemoteNotificationServer.h */,
+				F302AECC12E50C0A00CB5374 /* SBRemoteViewInfo.h */,
+				F302AECD12E50C0A00CB5374 /* SBRemoteViewsController.h */,
+				F302AECE12E50C0A00CB5374 /* SBRemovedFolderHole.h */,
+				F302AECF12E50C0A00CB5374 /* SBReorderInfoAlert.h */,
+				F302AED012E50C0A00CB5374 /* SBResetManager.h */,
+				F302AED112E50C0A00CB5374 /* SBResetProgressView.h */,
+				F302AED212E50C0A00CB5374 /* SBResetView.h */,
+				F302AED312E50C0A00CB5374 /* SBRestoreFailureAlertItem.h */,
+				F302AED412E50C0A00CB5374 /* SBRingerHUDController.h */,
+				F302AED512E50C0A00CB5374 /* SBRingerHUDView.h */,
+				F302AED612E50C0A00CB5374 /* SBRootFolder.h */,
+				F302AED712E50C0A00CB5374 /* SBRoundedCornersView.h */,
+				F302AED812E50C0A00CB5374 /* SBRoundedMaskCornerView.h */,
+				F302AED912E50C0A00CB5374 /* SBScreenFlash.h */,
+				F302AEDA12E50C0A00CB5374 /* SBScreenShotter.h */,
+				F302AEDB12E50C0A00CB5374 /* SBSearchController.h */,
+				F302AEDC12E50C0A00CB5374 /* SBSearchModel.h */,
+				F302AEDD12E50C0A00CB5374 /* SBSearchTableViewCell.h */,
+				F302AEDE12E50C0A00CB5374 /* SBSearchView.h */,
+				F302AEDF12E50C0A00CB5374 /* SBSheetController.h */,
+				F302AEE012E50C0A00CB5374 /* SBSheetView.h */,
+				F302AEE112E50C0A00CB5374 /* SBSIMLockAlertItem.h */,
+				F302AEE212E50C0A00CB5374 /* SBSIMLockEntryAlert.h */,
+				F302AEE312E50C0A00CB5374 /* SBSIMLockEntryAlertDisplay.h */,
+				F302AEE412E50C0A00CB5374 /* SBSIMLockManager.h */,
+				F302AEE512E50C0A00CB5374 /* SBSIMLockPUKEntryAlertDisplay.h */,
+				F302AEE612E50C0A00CB5374 /* SBSIMToolkitAlert.h */,
+				F302AEE712E50C0A00CB5374 /* SBSIMToolkitGetInputDisplay.h */,
+				F302AEE812E50C0A00CB5374 /* SBSIMToolkitGetYesNoInputDisplay.h */,
+				F302AEE912E50C0A00CB5374 /* SBSIMToolkitListDisplay.h */,
+				F302AEEA12E50C0A00CB5374 /* SBSIMToolkitOneShotGetInputDisplay.h */,
+				F302AEEB12E50C0A00CB5374 /* SBSIMToolkitSentAlertDisplay.h */,
+				F302AEEC12E50C0A00CB5374 /* SBSIMToolkitSetUpCallDisplay.h */,
+				F302AEED12E50C0A00CB5374 /* SBSIMToolkitTextAlertDisplay.h */,
+				F302AEEE12E50C0A00CB5374 /* SBSlidingAlertDisplay.h */,
+				F302AEEF12E50C0A00CB5374 /* SBSlidingViewHighlight.h */,
+				F302AEF012E50C0A00CB5374 /* SBSMSAlertItem.h */,
+				F302AEF112E50C0A00CB5374 /* SBSMSApplication.h */,
+				F302AEF212E50C0A00CB5374 /* SBSMSClass0Alert.h */,
+				F302AEF312E50C0A00CB5374 /* SBSMSManager.h */,
+				F302AEF412E50C0A00CB5374 /* SBSoundPreferences.h */,
+				F302AEF512E50C0A00CB5374 /* SBStatusBarDataManager.h */,
+				F302AEF612E50C0A00CB5374 /* SBSyncController.h */,
+				F302AEF712E50C0A00CB5374 /* SBTelephonyManager.h */,
+				F302AEF812E50C0A00CB5374 /* SBTetherController.h */,
+				F302AEF912E50C0A00CB5374 /* SBTextDisplayView.h */,
+				F302AEFA12E50C0A00CB5374 /* SBTTYPromptAlert.h */,
+				F302AEFB12E50C0A00CB5374 /* SBTTYPromptAlertDisplay.h */,
+				F302AEFC12E50C0A00CB5374 /* SBTVOutController.h */,
+				F302AEFD12E50C0A00CB5374 /* SBUIController.h */,
+				F302AEFE12E50C0A00CB5374 /* SBUnsupportedURLAlertItem.h */,
+				F302AEFF12E50C0A00CB5374 /* SBUserInstalledApplicationIcon.h */,
+				F302AF0012E50C0A00CB5374 /* SBUserNotificationAlert.h */,
+				F302AF0112E50C0A00CB5374 /* SBUserNotificationAlertSheet.h */,
+				F302AF0212E50C0A00CB5374 /* SBUserNotificationCenter.h */,
+				F302AF0312E50C0A00CB5374 /* SBUSSDAlert.h */,
+				F302AF0412E50C0A00CB5374 /* SBUSSDAlertDisplay.h */,
+				F302AF0512E50C0A00CB5374 /* SBVideoAlert.h */,
+				F302AF0612E50C0A00CB5374 /* SBVideoAlertDisplay.h */,
+				F302AF0712E50C0A00CB5374 /* SBVideoPermissionAlertItem.h */,
+				F302AF0812E50C0A00CB5374 /* SBVODController.h */,
+				F302AF0912E50C0A00CB5374 /* SBVoiceControlAlert.h */,
+				F302AF0A12E50C0A00CB5374 /* SBVoiceMailAlertItem.h */,
+				F302AF0B12E50C0A00CB5374 /* SBVoicemailManager.h */,
+				F302AF0C12E50C0A00CB5374 /* SBVolumeHUDView.h */,
+				F302AF0D12E50C0A00CB5374 /* SBWallpaperClipView.h */,
+				F302AF0E12E50C0A00CB5374 /* SBWallpaperNotchView.h */,
+				F302AF0F12E50C0A00CB5374 /* SBWallpaperView.h */,
+				F302AF1012E50C0A00CB5374 /* SBWaveView.h */,
+				F302AF1112E50C0A00CB5374 /* SBWeatherApplicationIcon.h */,
+				F302AF1212E50C0A00CB5374 /* SBWidgetApplicationIcon.h */,
+				F302AF1312E50C0A00CB5374 /* SBWiFiDontAskAlertItem.h */,
+				F302AF1412E50C0A00CB5374 /* SBWiFiErrorAlertItem.h */,
+				F302AF1512E50C0A00CB5374 /* SBWiFiIsEnterpriseAlert.h */,
+				F302AF1612E50C0A00CB5374 /* SBWiFiManagerDelegate.h */,
+				F302AF1712E50C0A00CB5374 /* SBWiFiPasswordAlertItem.h */,
+				F302AF1812E50C0A00CB5374 /* SBWiFiTrustAlertItem.h */,
+				F302AF1912E50C0A00CB5374 /* SBZoomView.h */,
+				F302AF1A12E50C0A00CB5374 /* SMSAlertSheet.h */,
+				F302AF1B12E50C0A00CB5374 /* SPDaemonQueryDelegate.h */,
+				F302AF1C12E50C0A00CB5374 /* SpringBoard-Class.h */,
+				F302AF1D12E50C0A00CB5374 /* SpringBoard-Structs.h */,
+				F302AF1E12E50C0A00CB5374 /* SpringBoard.h */,
+				F302AF1F12E50C0A00CB5374 /* SSDownloadQueueObserver.h */,
+				F302AF2012E50C0A00CB5374 /* UIAlertTableCell.h */,
+				F302AF2112E50C0A00CB5374 /* UIAlertViewDelegate.h */,
+				F302AF2212E50C0A00CB5374 /* UIApplicationDelegate.h */,
+				F302AF2312E50C0A00CB5374 /* UIKeyInput.h */,
+				F302AF2412E50C0A00CB5374 /* UINavigationControllerDelegate.h */,
+				F302AF2512E50C0A00CB5374 /* UIPageControl.h */,
+				F302AF2612E50C0A00CB5374 /* UIPrintStatusDelegate.h */,
+				F302AF2712E50C0A00CB5374 /* UIScrollView.h */,
+				F302AF2812E50C0A00CB5374 /* UIScrollViewDelegate.h */,
+				F302AF2912E50C0A00CB5374 /* UISearchBarDelegate.h */,
+				F302AF2A12E50C0A00CB5374 /* UIStatusBarStyleDelegate.h */,
+				F302AF2B12E50C0A00CB5374 /* UITableViewDataSource.h */,
+				F302AF2C12E50C0A00CB5374 /* UITableViewDelegate.h */,
+				F302AF2D12E50C0A00CB5374 /* UITextFieldDelegate.h */,
+				F302AF2E12E50C0A00CB5374 /* UITextInputTraits.h */,
+				F302AF2F12E50C0A00CB5374 /* UIWindowDelegate.h */,
+				F302AF3012E50C0A00CB5374 /* VolumeControl.h */,
+				F302AF3112E50C0A00CB5374 /* WhiteBorderedTextField.h */,
+			);
+			name = SpringBoard;
+			path = /Users/alistair/Documents/Development/iPhone/Headers/4.2/SpringBoard;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3D3FD4212E4B7E400A7BD33 /* MultitaskingTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D3FD5912E4B85100A7BD33 /* Build configuration list for PBXNativeTarget "MultitaskingTime" */;
+			buildPhases = (
+				F313E28112E4BDA0009EEDBA /* CopyFiles */,
+				F3D3FD4012E4B7E400A7BD33 /* Sources */,
+				F3D3FD4112E4B7E400A7BD33 /* Frameworks */,
+				F313E26712E4BAB7009EEDBA /* Copy */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultitaskingTime;
+			productName = MultitaskingTime;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MultitaskingTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3D3FD4212E4B7E400A7BD33 /* MultitaskingTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F313E26712E4BAB7009EEDBA /* Copy */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Copy;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\nif [ \"${ARCHS}\" != \"i386\" ]; then\n\tldid -S \"${EXECUTABLE_PATH}\"\nfi\n\nif [ \"${COPY}\" == \"YES\" ]; then\n\tEXECUTABLE_PREFIX=`echo ${EXECUTABLE_NAME}|sed 's/\\.dylib$//g'`\n\tscp -P ${IPHONE_PORT} \"${EXECUTABLE_PATH}\" \"${IPHONE_USER}@${IPHONE_HOST}:/Library/MobileSubstrate/DynamicLibraries\"\n\tscp -P ${IPHONE_PORT} \"$EXECUTABLE_PREFIX.plist\" \"${IPHONE_USER}@${IPHONE_HOST}:/Library/MobileSubstrate/DynamicLibraries\"\n\tssh ${IPHONE_USER}@${IPHONE_HOST} -p ${IPHONE_PORT} \"killall SpringBoard\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3D3FD4012E4B7E400A7BD33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D3FD4912E4B80900A7BD33 /* MultitaskingTime.m in Sources */,
+				F3FA928B12E60CAD00ED5B19 /* MTIconLayoutView.m in Sources */,
+				F3FA928C12E60CAD00ED5B19 /* MTSBIconServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/alistair/Documents/Development/iPhone/Headers;
+				IPHONE_HOST = localhost;
+				IPHONE_PORT = 2222;
+				IPHONE_USER = root;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/alistair/Documents/Development/iPhone/Headers;
+				IPHONE_HOST = localhost;
+				IPHONE_PORT = 2222;
+				IPHONE_USER = root;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		F3A58FCD12EA4558008A04FB /* Release (Copy on-device) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/alistair/Documents/Development/iPhone/Headers;
+				IPHONE_HOST = localhost;
+				IPHONE_PORT = 2222;
+				IPHONE_USER = root;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = "Release (Copy on-device)";
+		};
+		F3A58FCE12EA4558008A04FB /* Release (Copy on-device) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MultitaskingTime_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = MultitaskingTime;
+			};
+			name = "Release (Copy on-device)";
+		};
+		F3D3FD4312E4B7E400A7BD33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY = "";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MultitaskingTime_Prefix.pch;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries/;
+				PREBINDING = NO;
+				PRODUCT_NAME = MultitaskingTime;
+			};
+			name = Debug;
+		};
+		F3D3FD4412E4B7E400A7BD33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MultitaskingTime_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = MultitaskingTime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MultitaskingTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				F3A58FCD12EA4558008A04FB /* Release (Copy on-device) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D3FD5912E4B85100A7BD33 /* Build configuration list for PBXNativeTarget "MultitaskingTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D3FD4312E4B7E400A7BD33 /* Debug */,
+				F3D3FD4412E4B7E400A7BD33 /* Release */,
+				F3A58FCE12EA4558008A04FB /* Release (Copy on-device) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,30 @@
+//
+// Prefix header for all source files of the 'ÇPROJECTNAMEÈ' target in the 'ÇPROJECTNAMEÈ' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
+
+#define MTIdentifier	@"battery"
+
+#import "MTStatusBarIcon.h"
+#include <objc/runtime.h>
+
+@interface SBUIController : NSObject
+
++ (id)sharedInstance;
+
+- (NSInteger)batteryCapacityAsPercentage;
+
+@end
+
+@interface MTSBIconServer : NSObject
+
++ (id)sharedInstance;
+
+- (void)reorderAllIcons;
+- (NSDictionary *)preferencesForBundleID:(NSString *)bundleID;
+
+@end

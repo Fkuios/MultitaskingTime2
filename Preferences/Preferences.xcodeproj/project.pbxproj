@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F362F83312EA64BC00BB5A05 /* MultitaskingTimeLoader.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = F362F83012EA646600BB5A05 /* MultitaskingTimeLoader.plist */; };
+		F362F83B12EA64EF00BB5A05 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F362F83912EA64EF00BB5A05 /* Icon.png */; };
+		F362F83C12EA64EF00BB5A05 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F362F83A12EA64EF00BB5A05 /* Icon@2x.png */; };
+		F3B9866812EC716C008215F7 /* PSSpecifier+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B9866712EC716C008215F7 /* PSSpecifier+Actions.m */; };
+		F3C5147B12EA5BA70041521F /* MTSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C5147A12EA5BA70041521F /* MTSettingsController.m */; };
+		F3C5147D12EA5BB40041521F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5147C12EA5BB40041521F /* Foundation.framework */; };
+		F3C5147F12EA5BB40041521F /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5147E12EA5BB40041521F /* Preferences.framework */; };
+		F3C5148112EA5BB40041521F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5148012EA5BB40041521F /* UIKit.framework */; };
+		F3D37D3812EAF20800820050 /* MTIconSpacingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D37D3712EAF20800820050 /* MTIconSpacingController.m */; };
+		F3D37D4D12EAF91D00820050 /* LessSpace.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D37D4912EAF91D00820050 /* LessSpace.png */; };
+		F3D37D4E12EAF91D00820050 /* LessSpace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D37D4A12EAF91D00820050 /* LessSpace@2x.png */; };
+		F3D37D4F12EAF91D00820050 /* MoreSpace.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D37D4B12EAF91D00820050 /* MoreSpace.png */; };
+		F3D37D5012EAF91D00820050 /* MoreSpace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D37D4C12EAF91D00820050 /* MoreSpace@2x.png */; };
+		F3D37D8812EB046800820050 /* IconSpacing.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3D37D8712EB046800820050 /* IconSpacing.plist */; };
+		F3D37E0D12EB139C00820050 /* Root.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3D37E0C12EB139C00820050 /* Root.plist */; };
+		F3D37E7312EB1CC500820050 /* MTPluginSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D37E7212EB1CC500820050 /* MTPluginSettingsController.m */; };
+		F3D37F1212EB438700820050 /* PluginTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3D37F1112EB438700820050 /* PluginTemplate.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F362F83812EA64C200BB5A05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				F362F83312EA64BC00BB5A05 /* MultitaskingTimeLoader.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F362F83012EA646600BB5A05 /* MultitaskingTimeLoader.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = MultitaskingTimeLoader.plist; sourceTree = "<group>"; };
+		F362F83912EA64EF00BB5A05 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F362F83A12EA64EF00BB5A05 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		F3B9866612EC716C008215F7 /* PSSpecifier+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PSSpecifier+Actions.h"; sourceTree = "<group>"; };
+		F3B9866712EC716C008215F7 /* PSSpecifier+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PSSpecifier+Actions.m"; sourceTree = "<group>"; };
+		F3C5146812EA58010041521F /* MultitaskingTime.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultitaskingTime.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C5146A12EA58010041521F /* Preferences-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Preferences-Info.plist"; sourceTree = "<group>"; };
+		F3C5147912EA5BA70041521F /* MTSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSettingsController.h; sourceTree = "<group>"; };
+		F3C5147A12EA5BA70041521F /* MTSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSettingsController.m; sourceTree = "<group>"; };
+		F3C5147C12EA5BB40041521F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3C5147E12EA5BB40041521F /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = System/Library/PrivateFrameworks/Preferences.framework; sourceTree = SDKROOT; };
+		F3C5148012EA5BB40041521F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3C5158512EA5C990041521F /* MTPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPrefix.pch; sourceTree = "<group>"; };
+		F3C8689D12EA683A00FEB9C5 /* MTStatusBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarIcon.h; path = ../MultitaskingTime/Classes/MTStatusBarIcon.h; sourceTree = SOURCE_ROOT; };
+		F3D37D3612EAF20800820050 /* MTIconSpacingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTIconSpacingController.h; sourceTree = "<group>"; };
+		F3D37D3712EAF20800820050 /* MTIconSpacingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTIconSpacingController.m; sourceTree = "<group>"; };
+		F3D37D4912EAF91D00820050 /* LessSpace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LessSpace.png; sourceTree = "<group>"; };
+		F3D37D4A12EAF91D00820050 /* LessSpace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LessSpace@2x.png"; sourceTree = "<group>"; };
+		F3D37D4B12EAF91D00820050 /* MoreSpace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoreSpace.png; sourceTree = "<group>"; };
+		F3D37D4C12EAF91D00820050 /* MoreSpace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoreSpace@2x.png"; sourceTree = "<group>"; };
+		F3D37D8712EB046800820050 /* IconSpacing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = IconSpacing.plist; sourceTree = "<group>"; };
+		F3D37E0C12EB139C00820050 /* Root.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Root.plist; sourceTree = "<group>"; };
+		F3D37E7112EB1CC500820050 /* MTPluginSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPluginSettingsController.h; sourceTree = "<group>"; };
+		F3D37E7212EB1CC500820050 /* MTPluginSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPluginSettingsController.m; sourceTree = "<group>"; };
+		F3D37F1112EB438700820050 /* PluginTemplate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = PluginTemplate.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3C5146612EA58010041521F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C5147D12EA5BB40041521F /* Foundation.framework in Frameworks */,
+				F3C5147F12EA5BB40041521F /* Preferences.framework in Frameworks */,
+				F3C5148112EA5BB40041521F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3C5145A12EA57F10041521F = {
+			isa = PBXGroup;
+			children = (
+				F3C5147112EA584A0041521F /* Classes */,
+				F3C5147212EA58500041521F /* Resources */,
+				F3C5158312EA5C7B0041521F /* Other Sources */,
+				F3C5147312EA585D0041521F /* Frameworks */,
+				F3C5146912EA58010041521F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3C5146912EA58010041521F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5146812EA58010041521F /* MultitaskingTime.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3C5147112EA584A0041521F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F3C8689D12EA683A00FEB9C5 /* MTStatusBarIcon.h */,
+				F3C5147912EA5BA70041521F /* MTSettingsController.h */,
+				F3C5147A12EA5BA70041521F /* MTSettingsController.m */,
+				F3D37D3612EAF20800820050 /* MTIconSpacingController.h */,
+				F3D37D3712EAF20800820050 /* MTIconSpacingController.m */,
+				F3D37E7112EB1CC500820050 /* MTPluginSettingsController.h */,
+				F3D37E7212EB1CC500820050 /* MTPluginSettingsController.m */,
+				F3B9866612EC716C008215F7 /* PSSpecifier+Actions.h */,
+				F3B9866712EC716C008215F7 /* PSSpecifier+Actions.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F3C5147212EA58500041521F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3D37D4912EAF91D00820050 /* LessSpace.png */,
+				F3D37D4A12EAF91D00820050 /* LessSpace@2x.png */,
+				F3D37D4B12EAF91D00820050 /* MoreSpace.png */,
+				F3D37D4C12EAF91D00820050 /* MoreSpace@2x.png */,
+				F362F83912EA64EF00BB5A05 /* Icon.png */,
+				F362F83A12EA64EF00BB5A05 /* Icon@2x.png */,
+				F3C5146A12EA58010041521F /* Preferences-Info.plist */,
+				F362F83012EA646600BB5A05 /* MultitaskingTimeLoader.plist */,
+				F3D37D8712EB046800820050 /* IconSpacing.plist */,
+				F3D37E0C12EB139C00820050 /* Root.plist */,
+				F3D37F1112EB438700820050 /* PluginTemplate.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F3C5147312EA585D0041521F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5147C12EA5BB40041521F /* Foundation.framework */,
+				F3C5147E12EA5BB40041521F /* Preferences.framework */,
+				F3C5148012EA5BB40041521F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3C5158312EA5C7B0041521F /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5158512EA5C990041521F /* MTPrefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3C5146712EA58010041521F /* Preferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C5146D12EA58010041521F /* Build configuration list for PBXNativeTarget "Preferences" */;
+			buildPhases = (
+				F362F83812EA64C200BB5A05 /* CopyFiles */,
+				F3C5146412EA58010041521F /* Resources */,
+				F3C5146512EA58010041521F /* Sources */,
+				F3C5146612EA58010041521F /* Frameworks */,
+				F3C5156A12EA5BE60041521F /* Codesign */,
+				F3C5157E12EA5C110041521F /* Copy to device */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Preferences;
+			productName = Preferences;
+			productReference = F3C5146812EA58010041521F /* MultitaskingTime.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3C5145C12EA57F10041521F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = F3C5145F12EA57F10041521F /* Build configuration list for PBXProject "Preferences" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = F3C5145A12EA57F10041521F;
+			productRefGroup = F3C5146912EA58010041521F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3C5146712EA58010041521F /* Preferences */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3C5146412EA58010041521F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F362F83B12EA64EF00BB5A05 /* Icon.png in Resources */,
+				F362F83C12EA64EF00BB5A05 /* Icon@2x.png in Resources */,
+				F3D37D4D12EAF91D00820050 /* LessSpace.png in Resources */,
+				F3D37D4E12EAF91D00820050 /* LessSpace@2x.png in Resources */,
+				F3D37D4F12EAF91D00820050 /* MoreSpace.png in Resources */,
+				F3D37D5012EAF91D00820050 /* MoreSpace@2x.png in Resources */,
+				F3D37D8812EB046800820050 /* IconSpacing.plist in Resources */,
+				F3D37E0D12EB139C00820050 /* Root.plist in Resources */,
+				F3D37F1212EB438700820050 /* PluginTemplate.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3C5156A12EA5BE60041521F /* Codesign */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Codesign;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${ARCHS}\" != \"i386\" ]; then\n    ldid -S \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nfi";
+		};
+		F3C5157E12EA5C110041521F /* Copy to device */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy to device";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${COPY}\" == \"YES\" ] && [ \"${ARCHS}\" != \"i386\" ];  then\n\tssh root@localhost -p 2222 \"rm -rf \\\"/System/Library/PreferenceBundles/${WRAPPER_NAME}\\\"\"\n\tssh root@localhost -p 2222 \"rm -f \\\"/Library/PreferenceLoader/Preferences/${PRODUCT_NAME}.plist\\\"\"\n\tscp -P 2222 -r \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"root@localhost:/System/Library/PreferenceBundles/${WRAPPER_NAME}\"\n\tscp -P 2222 \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}Loader.plist\" \"root@localhost:/Library/PreferenceLoader/Preferences/${PRODUCT_NAME}.plist\"\n\tssh mobile@localhost -p 2222 \"killall Preferences\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3C5146512EA58010041521F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C5147B12EA5BA70041521F /* MTSettingsController.m in Sources */,
+				F3D37D3812EAF20800820050 /* MTIconSpacingController.m in Sources */,
+				F3D37E7312EB1CC500820050 /* MTPluginSettingsController.m in Sources */,
+				F3B9866812EC716C008215F7 /* PSSpecifier+Actions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3C5145D12EA57F10041521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3C5145E12EA57F10041521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		F3C5146B12EA58010041521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"/System/Library/PrivateFrameworks/\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MTPrefix.pch;
+				HEADER_SEARCH_PATHS = "~/Documents/Development/iPhone/Headers/";
+				INFOPLIST_FILE = "Preferences-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				PREBINDING = NO;
+				PRODUCT_NAME = MultitaskingTime;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F3C5146C12EA58010041521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"/System/Library/PrivateFrameworks/\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MTPrefix.pch;
+				HEADER_SEARCH_PATHS = "~/Documents/Development/iPhone/Headers/";
+				INFOPLIST_FILE = "Preferences-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				PREBINDING = NO;
+				PRODUCT_NAME = MultitaskingTime;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3C5145F12EA57F10041521F /* Build configuration list for PBXProject "Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C5145D12EA57F10041521F /* Debug */,
+				F3C5145E12EA57F10041521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3C5146D12EA58010041521F /* Build configuration list for PBXNativeTarget "Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C5146B12EA58010041521F /* Debug */,
+				F3C5146C12EA58010041521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3C5145C12EA57F10041521F /* Project object */;
+}

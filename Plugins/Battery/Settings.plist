@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>com.fkuios.multitaskingtime.battery</string>
+			<key>key</key>
+			<string>showpercentage</string>
+			<key>default</key>
+			<false/>
+			<key>label</key>
+			<string>Battery Percentage</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.fkuios.multitaskingtime.battery</string>
+			<key>key</key>
+			<string>percentageposition</string>
+			<key>default</key>
+			<string>left</string>
+			<key>validValues</key>
+			<array>
+				<string>left</string>
+				<string>right</string>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Left</string>
+				<string>Right</string>
+			</array>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>label</key>
+			<string>Percentage Position</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Battery</string>
+</dict>
+</plist>

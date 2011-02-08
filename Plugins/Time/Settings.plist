@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>com.fkuios.multitaskingtime.time</string>
+			<key>key</key>
+			<string>showseconds</string>
+			<key>default</key>
+			<false/>
+			<key>label</key>
+			<string>Show Seconds</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>com.fkuios.multitaskingtime.time</string>
+			<key>key</key>
+			<string>showdate</string>
+			<key>default</key>
+			<false/>
+			<key>label</key>
+			<string>Show Date</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Battery</string>
+</dict>
+</plist>

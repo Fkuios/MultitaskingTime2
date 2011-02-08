@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.fkuios.multitaskingtime</string>
+			<key>key</key>
+			<string>spacing</string>
+			<key>default</key>
+			<real>5</real>
+			<key>label</key>
+			<string>Icon spacing</string>
+			<key>min</key>
+			<real>0</real>
+			<key>max</key>
+			<real>15</real>
+			<key>leftImage</key>
+			<string>LessSpace.png</string>
+			<key>rightImage</key>
+			<string>MoreSpace.png</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Icon Spacing</string>
+</dict>
+</plist>

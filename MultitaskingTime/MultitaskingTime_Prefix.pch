@@ -1,0 +1,38 @@
+//
+// Prefix header for all source files of the 'MultitaskingTime' target in the 'MultitaskingTime' project
+//
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#import <CoreFoundation/CoreFoundation.h>
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import "SpringBoard-Structs.h"
+	#import "SpringBoard.h"
+
+@interface UIView (Description)
+
+- (NSString *)recursiveDescription;
+
+@end
+
+#endif
+
+#import <CaptainHook/CaptainHook.h>
+
+
+#define kMTBarHeight			25.0f
+#define kMTAdditionalHeight		kMTBarHeight
+
+static inline CGRect CGRectFromSize(CGSize size) {
+	return CGRectMake(0, 0, size.width, size.height);
+}
+
+static inline CGRect CGRectBounds(CGRect rect) {
+	return CGRectFromSize(rect.size);
+}
